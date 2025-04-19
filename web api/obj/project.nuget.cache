@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pMiaBAhPz0g=",
+  "dgSpecHash": "Fbu4VZ4fuJA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\This User\\Documents\\limodim\\fullstack_Project\\Full_Stack_Haker_Web\\web api\\web api.csproj",
+  "projectFilePath": "C:\\Users\\This User\\Documents\\limodim\\fullstack_Project\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\web api\\web api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\This User\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\This User\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

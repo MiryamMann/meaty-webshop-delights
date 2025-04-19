@@ -48,7 +48,7 @@ builder.Services.AddScoped<IBLClientService, BLClientService>();
 builder.Services.AddScoped<IBLManager, BLManager>();
 
 builder.Services.AddDbContext<DatabaseContext>(options =>
-    options.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\This User\\Documents\\limodim\\fullstack_Project\\Full_Stack_Haker_Web\\Dal\\Data\\Database.mdf\";Integrated Security=True\r\n"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

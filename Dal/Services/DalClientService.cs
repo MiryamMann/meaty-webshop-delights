@@ -40,8 +40,14 @@ namespace Dal.Services
 
         public List<Product> GetAllProducts()
         {
-
-            return _context.Products.ToList();  
+            try { 
+            return _context.Products.ToList();}
+            catch(Exception ex)
+{
+                Console.WriteLine(ex.ToString());
+                throw; // כדי לא להשתיק לגמרי
+            }
+           
         }
         public List<Order> GetAllOrders(string clientId)
         {

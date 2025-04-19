@@ -56,3 +56,16 @@ C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-serv
 C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Dal\obj\Debug\net8.0\refint\Dal.dll
 C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Dal\obj\Debug\net8.0\Dal.pdb
 C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Dal\obj\Debug\net8.0\ref\Dal.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\bin\Debug\net8.0\Dal.deps.json
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\bin\Debug\net8.0\Dal.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\bin\Debug\net8.0\Dal.pdb
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.csproj.AssemblyReference.cache
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.AssemblyInfoInputs.cache
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.AssemblyInfo.cs
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.csproj.CoreCompileInputs.cache
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.sourcelink.json
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\refint\Dal.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.pdb
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\ref\Dal.dll
