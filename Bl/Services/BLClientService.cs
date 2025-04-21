@@ -11,73 +11,66 @@ namespace Bl.Services
 
     public class BLClientService : IBLClientService
     {
-        private string connectionString = "your_connection_string_here";
-        private readonly IDalClientService DalClientService;
-        long orderId;//צריך לבדוק איך מאתחלים אותו! מאיפה מקבלים אותו?  מחפשים את מספר ההזמנה לפי משהו
+        private readonly IDalClientService _dalClientService;
+
         public BLClientService(IDalClientService dalClientService)
         {
-            DalClientService = dalClientService;
-            if (dalClientService == null)
-            {
-                Console.WriteLine("ctor null");
-            }
+            _dalClientService = dalClientService ?? throw new ArgumentNullException(nameof(dalClientService));
         }
 
-        public bool AddProduct(IBLManager IBL, long orderId)
+       
+        public bool AddProductToOrder(IBLManager IBL, long orderId)
         {
-            if (IBL.product == null)
+            bool result=false;
+            if (IBL?.product == null)
             {
                 return false;
             }
-            var order = GetOrderById(orderId);
-            var item = order.OrderItems.FirstOrDefault(o => o.OrderItemId == orderId);
-            if (item != null)
-            {
-                order.OrderItems.Add(item);
-            }
-            // Store in database
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                string query = "INSERT INTO OrderProducts (OrderId, ProductId, Quantity) VALUES (@OrderId, @ProductId, @Quantity)";
-                SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@OrderId", orderId);
-                command.Parameters.AddWithValue("@ProductId", IBL.product.Id); // Assuming product has an Id property
-                command.Parameters.AddWithValue("@Quantity", IBL.orderItem.Amount); // Assuming product has a Quantity property
-
-                connection.Open();
-                int result = command.ExecuteNonQuery();
-
-                return result > 0; // Returns true if insert was successful
-            }
-        }
-        public bool RemoveProduct(BlProduct product)
-        {
-            if (product == null)
-                return false;
             var order = GetOrderById(orderId);
             if (order == null)
             { return false; }
 
-            var result = order.OrderItems.FirstOrDefault(o => o.ProductId == product.Id);
-            order.OrderItems.Remove(result);
-            return true;
-
+            var item = order.OrderItems.FirstOrDefault(o => o.OrderItemId == orderId);
+            if (item != null)
+            {
+                 result= _dalClientService.AddProductToOrder(Mapper.ToDalProduct(IBL.product), orderId);
+            }
+            return result;
+            
+        }
+        public bool RemoveProduct(IBLManager IBL, long orderId)
+        {
+            bool result = false;
+            if (IBL?.product == null)
+            {
+                return false;
+            }
+            var order = GetOrderById(orderId);
+            if (order == null)
+            { return false; }
+            var item = order.OrderItems.FirstOrDefault(o => o.OrderItemId == orderId);
+            if (item != null)
+            {
+                result = _dalClientService.RemoveProduct(Mapper.ToDalProduct(IBL.product),orderId);
+            }
+            return result;
         }
         private BlOrder GetOrderById(long orderId)
         {
-            if (DalClientService.GetOrderById(orderId) == null) return null;
-            var s = DalClientService.GetOrderById(orderId);
-            return Mapper.ToBlOrder(s);
+            var orderEntity = _dalClientService.GetOrderById(orderId); // Fetching from DAL
+            if (orderEntity == null) return null; // Return null if not found
+
+            return Mapper.ToBlOrder(orderEntity); // Mapping to BlOrder
         }
 
         public bool LogIn(string id, string passward)
         {
-            throw new NotImplementedException();
+         return  _dalClientService.LogIn(id, passward);
         }
 
         public bool SignUp(BlClient client)
         {
-            throw new NotImplementedException();
+           _dalClientService.SignUp(Mapper.ToDalClient( client));
         }
 
         public bool LogOut()
@@ -103,18 +96,18 @@ namespace Bl.Services
 
         public List<BlOrder> GetAllOrders(string clientId)
         {
-            var orders = DalClientService.GetAllOrders(clientId);
+            var orders = _dalClientService.GetAllOrders(clientId);
             return Mapper.ToListBlOrder(orders);
 
         }
         public List<BlProduct> GetAllProducts()
         {
-            if (DalClientService == null)
+            if (_dalClientService == null)
             { Console.WriteLine("null"); }
             else
             {
-                var products = DalClientService.GetAllProducts();
-                return Mapper.ToListBlProduct(products);
+               
+                return Mapper.ToListBlProduct(_dalClientService.GetAllProducts());
             }
             return null;
 

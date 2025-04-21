@@ -2808,23 +2808,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\This User\\.nuget\\packages\\": {},
+    "C:\\Users\\Owner\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\This User\\Documents\\limodim\\fullstack_Project\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Dal\\Dal.csproj",
+      "projectUniqueName": "D:\\tamar\\fullstak\\final project\\Full_Stack_Haker_Web\\Dal\\Dal.csproj",
       "projectName": "Dal",
-      "projectPath": "C:\\Users\\This User\\Documents\\limodim\\fullstack_Project\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Dal\\Dal.csproj",
-      "packagesPath": "C:\\Users\\This User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\This User\\Documents\\limodim\\fullstack_Project\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Dal\\obj\\",
+      "projectPath": "D:\\tamar\\fullstak\\final project\\Full_Stack_Haker_Web\\Dal\\Dal.csproj",
+      "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
+      "outputPath": "D:\\tamar\\fullstak\\final project\\Full_Stack_Haker_Web\\Dal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\This User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2833,7 +2833,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

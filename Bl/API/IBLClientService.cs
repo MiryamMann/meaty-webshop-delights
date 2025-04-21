@@ -14,8 +14,8 @@ namespace Bl.API
         bool SignUp(BlClient client);
         bool LogOut();
         bool BeginOrder();
-        bool AddProduct(IBLManager product, long orderId);
-        bool RemoveProduct(BlProduct product);
+        public bool AddProductToOrder(IBLManager IBL, long orderId);
+         bool RemoveProduct(IBLManager IBL, long orderId);
         bool FinishOrder();
         bool Payment();
         List<BlOrder> GetAllOrders(string clientId);

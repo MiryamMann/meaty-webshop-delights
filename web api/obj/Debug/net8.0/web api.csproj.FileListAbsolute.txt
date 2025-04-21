@@ -881,3 +881,14 @@ C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full
 C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\web api\obj\Debug\net8.0\web api.pdb
 C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\web api\obj\Debug\net8.0\web api.genruntimeconfig.cache
 C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\web api\obj\Debug\net8.0\ref\web api.dll
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\web api\obj\Debug\net8.0\web api.csproj.AssemblyReference.cache
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\web api\obj\Debug\net8.0\web api.GeneratedMSBuildEditorConfig.editorconfig
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\web api\obj\Debug\net8.0\web api.AssemblyInfoInputs.cache
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\web api\obj\Debug\net8.0\web api.AssemblyInfo.cs
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\web api\obj\Debug\net8.0\web api.csproj.CoreCompileInputs.cache
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\web api\obj\Debug\net8.0\web api.MvcApplicationPartsAssemblyInfo.cs
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\web api\obj\Debug\net8.0\web api.MvcApplicationPartsAssemblyInfo.cache
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\web api\obj\Debug\net8.0\web api.sourcelink.json
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\web api\obj\Debug\net8.0\web api.dll
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\web api\obj\Debug\net8.0\refint\web api.dll
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\web api\obj\Debug\net8.0\web api.pdb

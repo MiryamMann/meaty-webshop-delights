@@ -91,3 +91,12 @@ C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full
 C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.pdb
 C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.genruntimeconfig.cache
 C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\ref\Bl.dll
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.csproj.AssemblyReference.cache
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.AssemblyInfoInputs.cache
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.AssemblyInfo.cs
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.csproj.CoreCompileInputs.cache
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.sourcelink.json
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.dll
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\refint\Bl.dll
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.pdb

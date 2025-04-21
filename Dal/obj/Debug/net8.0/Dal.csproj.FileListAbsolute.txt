@@ -69,3 +69,7 @@ C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full
 C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\refint\Dal.dll
 C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.pdb
 C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\ref\Dal.dll
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.csproj.AssemblyReference.cache
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.dll
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\refint\Dal.dll
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.pdb
