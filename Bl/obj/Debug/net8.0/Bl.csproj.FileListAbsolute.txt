@@ -1,0 +1,15 @@
+H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\Bl.AssemblyInfoInputs.cache
+H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\Bl.AssemblyInfo.cs
+H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\Bl.csproj.CoreCompileInputs.cache
+H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\Bl.csproj.AssemblyReference.cache
+H:\Fullstack-server\Web-api\ClassLibrary1\bin\Debug\net8.0\Bl.deps.json
+H:\Fullstack-server\Web-api\ClassLibrary1\bin\Debug\net8.0\Bl.dll
+H:\Fullstack-server\Web-api\ClassLibrary1\bin\Debug\net8.0\Bl.pdb
+H:\Fullstack-server\Web-api\ClassLibrary1\bin\Debug\net8.0\Dal.dll
+H:\Fullstack-server\Web-api\ClassLibrary1\bin\Debug\net8.0\Dal.pdb
+H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\Bl.csproj.Up2Date
+H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\Bl.dll
+H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\refint\Bl.dll
+H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\Bl.pdb
+H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\ref\Bl.dll

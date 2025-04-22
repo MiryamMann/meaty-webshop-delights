@@ -1,0 +1,330 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\Fullstack-server\\Web-api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D8D54A9-13C2-4EBD-BEEA-2A698932DF4F}|Web-api\\Web-api.csproj|h:\\fullstack-server\\web-api\\web-api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D8D54A9-13C2-4EBD-BEEA-2A698932DF4F}|Web-api\\Web-api.csproj|solutionrelative:web-api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\servises\\blclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\servises\\blclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\servises\\blorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\servises\\blorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|h:\\fullstack-server\\web-api\\dal\\services\\dalorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|solutionrelative:dal\\services\\dalorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D8D54A9-13C2-4EBD-BEEA-2A698932DF4F}|Web-api\\Web-api.csproj|h:\\fullstack-server\\web-api\\web-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D8D54A9-13C2-4EBD-BEEA-2A698932DF4F}|Web-api\\Web-api.csproj|solutionrelative:web-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D8D54A9-13C2-4EBD-BEEA-2A698932DF4F}|Web-api\\Web-api.csproj|h:\\fullstack-server\\web-api\\web-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9D8D54A9-13C2-4EBD-BEEA-2A698932DF4F}|Web-api\\Web-api.csproj|solutionrelative:web-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\api\\iblclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\api\\iblclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\models\\bladdress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\models\\bladdress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|h:\\fullstack-server\\web-api\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|solutionrelative:dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\api\\iblorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\api\\iblorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|h:\\fullstack-server\\web-api\\dal\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|solutionrelative:dal\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|h:\\fullstack-server\\web-api\\dal\\services\\dalclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|solutionrelative:dal\\services\\dalclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|h:\\fullstack-server\\web-api\\dal\\api\\idalclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|solutionrelative:dal\\api\\idalclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|h:\\fullstack-server\\web-api\\dal\\models\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|solutionrelative:dal\\models\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|h:\\fullstack-server\\web-api\\dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|solutionrelative:dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Web-api\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "Web-api\\Controllers\\ClientController.cs",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\Web-api\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "Web-api\\Controllers\\ClientController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAjwDwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T09:22:58.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BLOrderService.cs",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Servises\\BLOrderService.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Servises\\BLOrderService.cs",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Servises\\BLOrderService.cs",
+              "RelativeToolTip": "ClassLibrary1\\Servises\\BLOrderService.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAIAwwB0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T09:21:37.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BLClientService.cs",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Servises\\BLClientService.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Servises\\BLClientService.cs",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Servises\\BLClientService.cs",
+              "RelativeToolTip": "ClassLibrary1\\Servises\\BLClientService.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAhwEsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T09:20:39.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Web-api\\appsettings.json",
+              "RelativeDocumentMoniker": "Web-api\\appsettings.json",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\Web-api\\appsettings.json",
+              "RelativeToolTip": "Web-api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-22T09:17:04.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BlAddress.cs",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Models\\BlAddress.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Models\\BlAddress.cs",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Models\\BlAddress.cs",
+              "RelativeToolTip": "ClassLibrary1\\Models\\BlAddress.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T09:16:07.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DalOrderService.cs",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Dal\\Services\\DalOrderService.cs",
+              "RelativeDocumentMoniker": "Dal\\Services\\DalOrderService.cs",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\Dal\\Services\\DalOrderService.cs",
+              "RelativeToolTip": "Dal\\Services\\DalOrderService.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAA6wDIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T09:15:19.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Dal",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Dal\\Dal.csproj",
+              "RelativeDocumentMoniker": "Dal\\Dal.csproj",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\Dal\\Dal.csproj",
+              "RelativeToolTip": "Dal\\Dal.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-22T09:14:34.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Mapper.cs",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Mapper.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Mapper.cs",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Mapper.cs",
+              "RelativeToolTip": "ClassLibrary1\\Mapper.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAIAwwCoAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T09:14:27.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BLManager.cs",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\BLManager.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\BLManager.cs",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\BLManager.cs",
+              "RelativeToolTip": "ClassLibrary1\\BLManager.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAIAwwAoAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T09:14:25.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IBLOrderService.cs",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Api\\IBLOrderService.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Api\\IBLOrderService.cs",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Api\\IBLOrderService.cs",
+              "RelativeToolTip": "ClassLibrary1\\Api\\IBLOrderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T09:13:13.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IBLClientService.cs",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Api\\IBLClientService.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Api\\IBLClientService.cs",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Api\\IBLClientService.cs",
+              "RelativeToolTip": "ClassLibrary1\\Api\\IBLClientService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T09:11:32.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Status.cs",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Dal\\Models\\Status.cs",
+              "RelativeDocumentMoniker": "Dal\\Models\\Status.cs",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\Dal\\Models\\Status.cs",
+              "RelativeToolTip": "Dal\\Models\\Status.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T09:11:15.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Web-api\\Program.cs",
+              "RelativeDocumentMoniker": "Web-api\\Program.cs",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\Web-api\\Program.cs",
+              "RelativeToolTip": "Web-api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T09:11:13.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IDalClientService.cs",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Dal\\Api\\IDalClientService.cs",
+              "RelativeDocumentMoniker": "Dal\\Api\\IDalClientService.cs",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\Dal\\Api\\IDalClientService.cs",
+              "RelativeToolTip": "Dal\\Api\\IDalClientService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T08:57:44.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DalClientService.cs",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Dal\\Services\\DalClientService.cs",
+              "RelativeDocumentMoniker": "Dal\\Services\\DalClientService.cs",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\Dal\\Services\\DalClientService.cs",
+              "RelativeToolTip": "Dal\\Services\\DalClientService.cs",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAUwMIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T08:57:31.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Bl",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Bl.csproj",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Bl.csproj",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Bl.csproj",
+              "RelativeToolTip": "ClassLibrary1\\Bl.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-22T08:52:15.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DatabaseContext.cs",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Dal\\Models\\DatabaseContext.cs",
+              "RelativeDocumentMoniker": "Dal\\Models\\DatabaseContext.cs",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\Dal\\Models\\DatabaseContext.cs",
+              "RelativeToolTip": "Dal\\Models\\DatabaseContext.cs",
+              "ViewState": "AQIAAK0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T09:00:22.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Dal\\Class1.cs",
+              "RelativeDocumentMoniker": "Dal\\Class1.cs",
+              "ToolTip": "H:\\Fullstack-server\\Web-api\\Dal\\Class1.cs",
+              "RelativeToolTip": "Dal\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T08:53:38.822Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

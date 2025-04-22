@@ -1,0 +1,14 @@
+H:\Fullstack-server\Web-api\Dal\obj\Debug\net8.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
+H:\Fullstack-server\Web-api\Dal\obj\Debug\net8.0\Dal.AssemblyInfoInputs.cache
+H:\Fullstack-server\Web-api\Dal\obj\Debug\net8.0\Dal.AssemblyInfo.cs
+H:\Fullstack-server\Web-api\Dal\obj\Debug\net8.0\Dal.csproj.CoreCompileInputs.cache
+H:\Fullstack-server\Web-api\Dal\obj\Debug\net8.0\Dal.csproj.AssemblyReference.cache
+H:\Fullstack-server\Web-api\Dal\bin\Debug\net8.0\Dal.deps.json
+H:\Fullstack-server\Web-api\Dal\bin\Debug\net8.0\Dal.runtimeconfig.json
+H:\Fullstack-server\Web-api\Dal\bin\Debug\net8.0\Dal.dll
+H:\Fullstack-server\Web-api\Dal\bin\Debug\net8.0\Dal.pdb
+H:\Fullstack-server\Web-api\Dal\obj\Debug\net8.0\Dal.dll
+H:\Fullstack-server\Web-api\Dal\obj\Debug\net8.0\refint\Dal.dll
+H:\Fullstack-server\Web-api\Dal\obj\Debug\net8.0\Dal.pdb
+H:\Fullstack-server\Web-api\Dal\obj\Debug\net8.0\Dal.genruntimeconfig.cache
+H:\Fullstack-server\Web-api\Dal\obj\Debug\net8.0\ref\Dal.dll
