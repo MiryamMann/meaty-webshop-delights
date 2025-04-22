@@ -7,14 +7,6 @@
       "RelativeMoniker": "D:0:0:{9D8D54A9-13C2-4EBD-BEEA-2A698932DF4F}|Web-api\\Web-api.csproj|solutionrelative:web-api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\servises\\blclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\servises\\blclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\servises\\blorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\servises\\blorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|h:\\fullstack-server\\web-api\\dal\\services\\dalorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|solutionrelative:dal\\services\\dalorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,32 +19,8 @@
       "RelativeMoniker": "D:0:0:{9D8D54A9-13C2-4EBD-BEEA-2A698932DF4F}|Web-api\\Web-api.csproj|solutionrelative:web-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\api\\iblclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\api\\iblclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\models\\bladdress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\models\\bladdress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|h:\\fullstack-server\\web-api\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|solutionrelative:dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|h:\\fullstack-server\\web-api\\classlibrary1\\api\\iblorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB25F2FE-F005-4991-8D88-D5FC88B27D82}|ClassLibrary1\\Bl.csproj|solutionrelative:classlibrary1\\api\\iblorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|h:\\fullstack-server\\web-api\\dal\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,6 +41,38 @@
     {
       "AbsoluteMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|h:\\fullstack-server\\web-api\\dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28C49DE0-981F-46B2-B077-D8DCD55773E2}|Dal\\Dal.csproj|solutionrelative:dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Servises\\BLOrderService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassLibrary1\\Servises\\BLOrderService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Servises\\BLClientService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassLibrary1\\Servises\\BLClientService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Models\\BlAddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassLibrary1\\Models\\BlAddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassLibrary1\\Mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Fullstack-server\\Web-api\\ClassLibrary1\\BLManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassLibrary1\\BLManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Api\\IBLOrderService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassLibrary1\\Api\\IBLOrderService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Api\\IBLClientService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassLibrary1\\Api\\IBLClientService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassLibrary1\\Bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -103,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "BLOrderService.cs",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Servises\\BLOrderService.cs",
               "RelativeDocumentMoniker": "ClassLibrary1\\Servises\\BLOrderService.cs",
@@ -111,12 +111,11 @@
               "RelativeToolTip": "ClassLibrary1\\Servises\\BLOrderService.cs",
               "ViewState": "AQIAABEAAAAAAAAAAIAwwB0AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T09:21:37.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T09:21:37.386Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "BLClientService.cs",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Servises\\BLClientService.cs",
               "RelativeDocumentMoniker": "ClassLibrary1\\Servises\\BLClientService.cs",
@@ -124,12 +123,11 @@
               "RelativeToolTip": "ClassLibrary1\\Servises\\BLClientService.cs",
               "ViewState": "AQIAAEAAAAAAAAAAAAAhwEsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T09:20:39.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T09:20:39.636Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Web-api\\appsettings.json",
               "RelativeDocumentMoniker": "Web-api\\appsettings.json",
@@ -137,12 +135,11 @@
               "RelativeToolTip": "Web-api\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-22T09:17:04.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T09:17:04.255Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "BlAddress.cs",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Models\\BlAddress.cs",
               "RelativeDocumentMoniker": "ClassLibrary1\\Models\\BlAddress.cs",
@@ -150,12 +147,11 @@
               "RelativeToolTip": "ClassLibrary1\\Models\\BlAddress.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T09:16:07.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T09:16:07.202Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "DalOrderService.cs",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Dal\\Services\\DalOrderService.cs",
               "RelativeDocumentMoniker": "Dal\\Services\\DalOrderService.cs",
@@ -163,25 +159,23 @@
               "RelativeToolTip": "Dal\\Services\\DalOrderService.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAA6wDIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T09:15:19.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T09:15:19.56Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Dal",
+              "DocumentIndex": 4,
+              "Title": "Dal.csproj",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Dal\\Dal.csproj",
               "RelativeDocumentMoniker": "Dal\\Dal.csproj",
               "ToolTip": "H:\\Fullstack-server\\Web-api\\Dal\\Dal.csproj",
               "RelativeToolTip": "Dal\\Dal.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-22T09:14:34.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T09:14:34.503Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Mapper.cs",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Mapper.cs",
               "RelativeDocumentMoniker": "ClassLibrary1\\Mapper.cs",
@@ -189,12 +183,11 @@
               "RelativeToolTip": "ClassLibrary1\\Mapper.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAIAwwCoAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T09:14:27.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T09:14:27.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "BLManager.cs",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\BLManager.cs",
               "RelativeDocumentMoniker": "ClassLibrary1\\BLManager.cs",
@@ -202,12 +195,11 @@
               "RelativeToolTip": "ClassLibrary1\\BLManager.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAIAwwAoAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T09:14:25.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T09:14:25.646Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "IBLOrderService.cs",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Api\\IBLOrderService.cs",
               "RelativeDocumentMoniker": "ClassLibrary1\\Api\\IBLOrderService.cs",
@@ -215,12 +207,11 @@
               "RelativeToolTip": "ClassLibrary1\\Api\\IBLOrderService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T09:13:13.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T09:13:13.509Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "IBLClientService.cs",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Api\\IBLClientService.cs",
               "RelativeDocumentMoniker": "ClassLibrary1\\Api\\IBLClientService.cs",
@@ -228,12 +219,11 @@
               "RelativeToolTip": "ClassLibrary1\\Api\\IBLClientService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T09:11:32.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T09:11:32.913Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 5,
               "Title": "Status.cs",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Dal\\Models\\Status.cs",
               "RelativeDocumentMoniker": "Dal\\Models\\Status.cs",
@@ -241,12 +231,11 @@
               "RelativeToolTip": "Dal\\Models\\Status.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T09:11:15.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T09:11:15.912Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Web-api\\Program.cs",
               "RelativeDocumentMoniker": "Web-api\\Program.cs",
@@ -254,12 +243,11 @@
               "RelativeToolTip": "Web-api\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T09:11:13.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T09:11:13.727Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 7,
               "Title": "IDalClientService.cs",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Dal\\Api\\IDalClientService.cs",
               "RelativeDocumentMoniker": "Dal\\Api\\IDalClientService.cs",
@@ -267,12 +255,11 @@
               "RelativeToolTip": "Dal\\Api\\IDalClientService.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T08:57:44.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T08:57:44.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 6,
               "Title": "DalClientService.cs",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Dal\\Services\\DalClientService.cs",
               "RelativeDocumentMoniker": "Dal\\Services\\DalClientService.cs",
@@ -280,25 +267,23 @@
               "RelativeToolTip": "Dal\\Services\\DalClientService.cs",
               "ViewState": "AQIAAKsAAAAAAAAAAAAUwMIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T08:57:31.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T08:57:31.553Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Bl",
+              "DocumentIndex": 17,
+              "Title": "Bl.csproj",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Bl.csproj",
               "RelativeDocumentMoniker": "ClassLibrary1\\Bl.csproj",
               "ToolTip": "H:\\Fullstack-server\\Web-api\\ClassLibrary1\\Bl.csproj",
               "RelativeToolTip": "ClassLibrary1\\Bl.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-22T08:52:15.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T08:52:15.782Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 8,
               "Title": "DatabaseContext.cs",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Dal\\Models\\DatabaseContext.cs",
               "RelativeDocumentMoniker": "Dal\\Models\\DatabaseContext.cs",
@@ -306,12 +291,11 @@
               "RelativeToolTip": "Dal\\Models\\DatabaseContext.cs",
               "ViewState": "AQIAAK0AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T09:00:22.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T09:00:22.899Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 9,
               "Title": "Class1.cs",
               "DocumentMoniker": "H:\\Fullstack-server\\Web-api\\Dal\\Class1.cs",
               "RelativeDocumentMoniker": "Dal\\Class1.cs",
@@ -319,8 +303,7 @@
               "RelativeToolTip": "Dal\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T08:53:38.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T08:53:38.822Z"
             }
           ]
         }

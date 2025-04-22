@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
 H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\Bl.AssemblyInfoInputs.cache
 H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\Bl.AssemblyInfo.cs
@@ -13,3 +14,107 @@ H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\Bl.dll
 H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\refint\Bl.dll
 H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\Bl.pdb
 H:\Fullstack-server\Web-api\ClassLibrary1\obj\Debug\net8.0\ref\Bl.dll
+=======
+H:\fullstack\Server\Bl\bin\Debug\net8.0\Bl.deps.json
+H:\fullstack\Server\Bl\bin\Debug\net8.0\Bl.runtimeconfig.json
+H:\fullstack\Server\Bl\bin\Debug\net8.0\Bl.dll
+H:\fullstack\Server\Bl\bin\Debug\net8.0\Bl.pdb
+H:\fullstack\Server\Bl\obj\Debug\net8.0\Bl.csproj.AssemblyReference.cache
+H:\fullstack\Server\Bl\obj\Debug\net8.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+H:\fullstack\Server\Bl\obj\Debug\net8.0\Bl.AssemblyInfoInputs.cache
+H:\fullstack\Server\Bl\obj\Debug\net8.0\Bl.AssemblyInfo.cs
+H:\fullstack\Server\Bl\obj\Debug\net8.0\Bl.csproj.CoreCompileInputs.cache
+H:\fullstack\Server\Bl\obj\Debug\net8.0\Bl.dll
+H:\fullstack\Server\Bl\obj\Debug\net8.0\refint\Bl.dll
+H:\fullstack\Server\Bl\obj\Debug\net8.0\Bl.pdb
+H:\fullstack\Server\Bl\obj\Debug\net8.0\Bl.genruntimeconfig.cache
+H:\fullstack\Server\Bl\obj\Debug\net8.0\ref\Bl.dll
+H:\Full_Stack_Pro\Server\Bl\obj\Debug\net8.0\Bl.csproj.AssemblyReference.cache
+H:\Full_Stack_Pro\Server\Bl\obj\Debug\net8.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+H:\Full_Stack_Pro\Server\Bl\obj\Debug\net8.0\Bl.AssemblyInfoInputs.cache
+H:\Full_Stack_Pro\Server\Bl\obj\Debug\net8.0\Bl.AssemblyInfo.cs
+H:\Full_Stack_Pro\Server\Bl\obj\Debug\net8.0\Bl.csproj.CoreCompileInputs.cache
+H:\Full_Stack_Pro\Server\Bl\obj\Debug\net8.0\Bl.sourcelink.json
+H:\Full_Stack_Pro\Server\Bl\obj\Debug\net8.0\Bl.dll
+H:\Full_Stack_Pro\Server\Bl\obj\Debug\net8.0\refint\Bl.dll
+H:\Full_Stack_Pro\Server\Bl\obj\Debug\net8.0\Bl.pdb
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.csproj.AssemblyReference.cache
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.AssemblyInfoInputs.cache
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.AssemblyInfo.cs
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.csproj.CoreCompileInputs.cache
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.sourcelink.json
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.dll
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\refint\Bl.dll
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.pdb
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Bl.deps.json
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Bl.runtimeconfig.json
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Bl.dll
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Bl.pdb
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Dal.dll
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Dal.pdb
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.csproj.Up2Date
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.genruntimeconfig.cache
+H:\Full_Stack_Pro\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\ref\Bl.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.csproj.AssemblyReference.cache
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.AssemblyInfoInputs.cache
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.AssemblyInfo.cs
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.csproj.CoreCompileInputs.cache
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\refint\Bl.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.pdb
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Bl.deps.json
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Bl.runtimeconfig.json
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Bl.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Bl.pdb
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Dal.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Dal.pdb
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.csproj.Up2Date
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.genruntimeconfig.cache
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\ref\Bl.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\bin\Debug\net8.0\Bl.deps.json
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\bin\Debug\net8.0\Bl.runtimeconfig.json
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\bin\Debug\net8.0\Bl.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\bin\Debug\net8.0\Bl.pdb
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\bin\Debug\net8.0\Dal.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\bin\Debug\net8.0\Dal.pdb
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\obj\Debug\net8.0\Bl.csproj.AssemblyReference.cache
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\obj\Debug\net8.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\obj\Debug\net8.0\Bl.AssemblyInfoInputs.cache
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\obj\Debug\net8.0\Bl.AssemblyInfo.cs
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\obj\Debug\net8.0\Bl.csproj.CoreCompileInputs.cache
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\obj\Debug\net8.0\Bl.csproj.Up2Date
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\obj\Debug\net8.0\Bl.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\obj\Debug\net8.0\refint\Bl.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\obj\Debug\net8.0\Bl.pdb
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\obj\Debug\net8.0\Bl.genruntimeconfig.cache
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web-server\Bl\obj\Debug\net8.0\ref\Bl.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Bl.deps.json
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Bl.runtimeconfig.json
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Bl.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Bl.pdb
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Dal.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\bin\Debug\net8.0\Dal.pdb
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.csproj.AssemblyReference.cache
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.AssemblyInfoInputs.cache
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.AssemblyInfo.cs
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.csproj.CoreCompileInputs.cache
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.sourcelink.json
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.csproj.Up2Date
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\refint\Bl.dll
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.pdb
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.genruntimeconfig.cache
+C:\Users\This User\Documents\limodim\fullstack_Project\Full_Stack_Haker_Web\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\ref\Bl.dll
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.csproj.AssemblyReference.cache
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.AssemblyInfoInputs.cache
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.AssemblyInfo.cs
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.csproj.CoreCompileInputs.cache
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.sourcelink.json
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.dll
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\refint\Bl.dll
+D:\tamar\fullstak\final project\Full_Stack_Haker_Web\Bl\obj\Debug\net8.0\Bl.pdb
+>>>>>>> b9d8e52a2a7b3a92919801bdd2c289a2d16c2fd2

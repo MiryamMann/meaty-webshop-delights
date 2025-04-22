@@ -24,7 +24,11 @@ namespace Bl
                 AddressId = dalOrder.AddressId,
                 TotalPrice = dalOrder.TotalPrice,
                 StatusId = dalOrder.StatusId,
+<<<<<<< HEAD
                 //OrderItems = dalOrder.OrderItems.Select(ToBlOrderItem).ToList() // Ensure to map OrderItems
+=======
+                OrderItems = dalOrder.OrderItems.Select(ToBlOrderItem).ToList() // Ensure to map OrderItems
+>>>>>>> b9d8e52a2a7b3a92919801bdd2c289a2d16c2fd2
             };
         }
 
@@ -39,7 +43,11 @@ namespace Bl
                 AddressId = blOrder.AddressId,
                 TotalPrice = blOrder.TotalPrice,
                 StatusId = blOrder.StatusId,
+<<<<<<< HEAD
                 //OrderItems = blOrder.OrderItems.Select(ToDalOrderItem).ToList() // Ensure to map OrderItems
+=======
+                OrderItems = blOrder.OrderItems.Select(ToDalOrderItem).ToList() // Ensure to map OrderItems
+>>>>>>> b9d8e52a2a7b3a92919801bdd2c289a2d16c2fd2
             };
         }
 
