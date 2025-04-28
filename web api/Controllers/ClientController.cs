@@ -7,9 +7,9 @@ using Dal;
 using Dal.models;
 using Dal.Services;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Security.Claims;
 
 namespace web_api.Controllers
 {
@@ -34,6 +34,7 @@ namespace web_api.Controllers
             return Ok(loginResponse); // מחזיר גם AccessToken וגם RefreshToken
         }
         [HttpPost("SignUp")]//יוצרת טוקן
+
         public async Task<IActionResult> SignUp([FromBody] ClientSignUpDto signUpDto)
         {
             var success = await _blManager.ClientService.SignUpAsync(signUpDto);
@@ -84,11 +85,13 @@ namespace web_api.Controllers
 
                 var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
+
                 if (await _blManager.ClientService.AddOrder(order.Client, order.Order))
                 {
                     return Ok(order);
                 }
-                return  BadRequest();
+
+                return Unauthorized();
            }
         }
         //[HttpPut("AddProduct")]
