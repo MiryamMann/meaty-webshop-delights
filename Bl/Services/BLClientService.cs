@@ -8,14 +8,16 @@ using Dal.Models;
 using System.Linq.Expressions;
 using Dal.models;
 using Dal;
-using Bl.API.BTOs;
+using Microsoft.AspNetCore.Identity;
 using Bl.API.DTOs;
+using Bl.API.BTOs;
+using Google.Apis.Auth;
 
 namespace Bl.Services
 {
     public class BLClientService : IBLClientServices
     {
-        private string connectionString = "your_connection_string_here";
+        private readonly PasswordHasher<BlClient> _passwordHasher = new();
         private readonly IDalClientService DalClientService;
         private readonly IJwtService _jwtService;
         long orderId;
@@ -25,6 +27,7 @@ namespace Bl.Services
             DalClientService = dalClientService;
             _jwtService = jwtService;
         }
+        #region Athentication
 
         public async Task<bool> LogIn(string email, string password)
         {
@@ -54,12 +57,24 @@ namespace Bl.Services
 
             return await DalClientService.SignUpAsync(client);
         }
-
-        public async Task<LoginResponseDto?> LoginWithTokensAsync(ClientLoginDto dto)
+        public async Task<LoginResponseDto?> LoginWithGoogleTokenAsync(string idToken)
         {
-            var dalClient = DalClientService.GetClientByEmail(dto.Email);
-            if (dalClient == null || dalClient.Password != dto.Password)
-                return null;//exseption
+            var payload = await GoogleJsonWebSignature.ValidateAsync(idToken);
+
+            // חיפוש לפי אימייל – כי זה המזהה הבטוח ביותר
+            var dalClient = DalClientService.GetClientByEmail(payload.Email);
+            if (dalClient == null)
+            {
+                // אם לא קיים – יוצרים משתמש חדש
+                dalClient = new Client
+                {
+                    Email = payload.Email,
+                    FirstName = payload.Name,
+                    // אין סיסמה – כי זה גוגל
+                    RefreshToken = null
+                };
+                await DalClientService.SignUpAsync(dalClient);
+            }
 
             var blClient = Mapper.ToBlClient(dalClient);
 
@@ -77,6 +92,35 @@ namespace Bl.Services
                 RefreshToken = refreshToken
             };
         }
+
+        public async Task<LoginResponseDto?> LoginWithTokensAsync(ClientLoginDto dto)
+        {
+            var dalClient = DalClientService.GetClientByEmail(dto.Email);
+            if (dalClient == null)
+                return null; // או זריקת שגיאה מותאמת
+
+            var blClient = Mapper.ToBlClient(dalClient);
+
+            // שינוי קריטי כאן - שימוש ב-PasswordHasher
+            var passwordVerificationResult = _passwordHasher.VerifyHashedPassword(blClient, dalClient.Password, dto.Password);
+            if (passwordVerificationResult != PasswordVerificationResult.Success)
+                return null; // או זריקת שגיאה מתאימה
+
+            var accessToken = _jwtService.GenerateToken(blClient);
+            var refreshToken = _jwtService.GenerateRefreshToken();
+
+            dalClient.RefreshToken = refreshToken;
+            dalClient.RefreshTokenExpiry = DateTime.UtcNow.AddDays(7);
+
+            await DalClientService.UpdateAsync(dalClient);
+
+            return new LoginResponseDto
+            {
+                AccessToken = accessToken,
+                RefreshToken = refreshToken
+            };
+        }
+        #endregion
 
         public bool AddProduct(BlOrderItem orderItem)
         {
@@ -150,10 +194,7 @@ namespace Bl.Services
             return Mapper.ToBlOrder(dalOrder);
         }
 
-        public bool LogOut()
-        {
-            return true; // עוד לא מיושם
-        }
+     
 
         public Order BeginOrder(string clientId)
         {

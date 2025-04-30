@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Google.Apis.Auth;
 
 namespace web_api.Controllers
 {
@@ -43,24 +44,30 @@ namespace web_api.Controllers
 
             return BadRequest("Failed to create client.");
         }
+        [HttpPost("google")]
+        public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginDto model)
+        {
+            try
+            {
+                var payload = await GoogleJsonWebSignature.ValidateAsync(model.IdToken);
 
+                // כאן את יכולה לבדוק אם המשתמש קיים, ואם לא – ליצור אותו
+                var user = new
+                {
+                    Email = payload.Email,
+                    Name = payload.Name,
+                    GoogleId = payload.Subject
+                };
 
-        //[HttpGet("LogOut")]
-        //public IActionResult LogOut()
-        //{
-        //    if(_blManager.ClientService.LogOut())
-        //    return Ok();
-        //    return BadRequest();
-        //}
-        //[HttpPut("BeginOrder")]
-        //public IActionResult BeginOrder()
-        //{
-        //    _blManager.ClientService.BeginOrder();
-        //        if (_blManager.ClientService.BeginOrder()!=null)
-        //        return Ok();
-        //    return BadRequest();
-        //}
-
+                // אם יש לך JWT משלך, את יכולה להחזיר אותו עכשיו
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return Unauthorized(new { error = "Invalid Google token", details = ex.Message });
+            }
+        }
+ 
         [HttpGet("GetAllProducts")]//לא צריך תוקן
         
         public IActionResult GetAllProducts()
@@ -113,20 +120,7 @@ namespace web_api.Controllers
             
             return BadRequest();
         }
-        //[HttpPut("FinishOrder")]
-        //public IActionResult FinishOrder()
-        //{
-        //    if (_blManager.ClientService)
-        //        return Ok();
-        //    return BadRequest();
-        //}
-        //[HttpPut("Payment")]
-        //public IActionResult Payment()
-        //{
-        //    if (_blManager.ClientService.Payment())
-        //        return Ok();
-        //    return BadRequest();
-        //}
+       
         [Authorize]
         [HttpGet("GetAllOrders")]
         public IActionResult GetAllOrders(string id)//Tamar
@@ -137,4 +131,5 @@ namespace web_api.Controllers
 
         }
     }
+
 }

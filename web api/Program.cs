@@ -1,4 +1,4 @@
-using Bl.API;
+﻿using Bl.API;
 using Bl.Services;
 using Bl;
 using Dal.models;
@@ -73,8 +73,22 @@ builder.Services.AddAuthentication(options =>
             Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:SecretKey"]))
     };
 });
+// Enable CORS for frontend access
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:5174") // 👈 זו הכתובת שלך
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
 var app = builder.Build();
+app.UseCors(MyAllowSpecificOrigins);
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -84,11 +98,6 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-// Enable CORS for frontend access
-app.UseCors(policy =>
-    policy.AllowAnyOrigin()
-          .AllowAnyMethod()
-          .AllowAnyHeader());
 
 app.UseHttpsRedirection();
 

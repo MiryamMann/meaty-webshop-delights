@@ -103,8 +103,8 @@ public partial class dbClass : DbContext
                 .IsFixedLength()
                 .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.Password)
-                .HasMaxLength(50)
-                .IsFixedLength()
+                .HasMaxLength(256)
+                .IsUnicode()
                 .UseCollation("SQL_Latin1_General_CP1_CI_AS");
         });
 

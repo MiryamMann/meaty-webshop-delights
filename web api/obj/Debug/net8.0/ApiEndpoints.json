@@ -43,6 +43,22 @@
   },
   {
     "ContainingType": "web_api.Controllers.ClientController",
+    "Method": "GoogleLogin",
+    "RelativePath": "api/Client/google",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Bl.API.DTOs.GoogleLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "web_api.Controllers.ClientController",
     "Method": "Login",
     "RelativePath": "api/Client/login",
     "HttpMethod": "POST",

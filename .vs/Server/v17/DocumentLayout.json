@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\web api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|solutionrelative:web api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\web api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|solutionrelative:web api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\bl\\services\\blclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\services\\blclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\dal\\services\\dalclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\services\\dalclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\bl\\api\\dtos\\googlelogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\api\\dtos\\googlelogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\web api\\Program.cs",
+              "RelativeDocumentMoniker": "web api\\Program.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\web api\\Program.cs",
+              "RelativeToolTip": "web api\\Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAUwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T18:51:29.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DalClientService.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Dal\\Services\\DalClientService.cs",
+              "RelativeDocumentMoniker": "Dal\\Services\\DalClientService.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Dal\\Services\\DalClientService.cs",
+              "RelativeToolTip": "Dal\\Services\\DalClientService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwFwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:17:39.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BLClientService.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Services\\BLClientService.cs",
+              "RelativeDocumentMoniker": "Bl\\Services\\BLClientService.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Services\\BLClientService.cs",
+              "RelativeToolTip": "Bl\\Services\\BLClientService.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAuwEsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:17:18.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\web api\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "web api\\Controllers\\ClientController.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\web api\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "web api\\Controllers\\ClientController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:16:55.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GoogleLoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\API\\DTOs\\GoogleLoginDto.cs",
+              "RelativeDocumentMoniker": "Bl\\API\\DTOs\\GoogleLoginDto.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\API\\DTOs\\GoogleLoginDto.cs",
+              "RelativeToolTip": "Bl\\API\\DTOs\\GoogleLoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T18:35:00.197Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
