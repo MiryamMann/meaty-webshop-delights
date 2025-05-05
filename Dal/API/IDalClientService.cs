@@ -28,6 +28,9 @@ namespace Bl.API
         Task<int> AddAddressAsync(Address address);
         Task<bool> SignUpAsync(Client client);
 
+        Task<bool> ExistsByEmailAsync(string email);
+        Task<Client?> GetByEmailAndPasswordAsync(string email, string password);
+
 
 
     }

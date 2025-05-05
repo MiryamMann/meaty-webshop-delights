@@ -5,7 +5,7 @@
     "version": "v1"
   },
   "paths": {
-    "/api/Client/login": {
+    "/api/Client/Login": {
       "post": {
         "tags": [
           "Client"
@@ -67,7 +67,7 @@
         }
       }
     },
-    "/api/Client/google": {
+    "/api/Client/Google": {
       "post": {
         "tags": [
           "Client"
@@ -314,8 +314,8 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "string",
-            "nullable": true
+            "type": "integer",
+            "format": "int32"
           },
           "firstName": {
             "type": "string",
@@ -456,10 +456,6 @@
       "ClientSignUpDto": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "nullable": true
-          },
           "firstName": {
             "type": "string",
             "nullable": true

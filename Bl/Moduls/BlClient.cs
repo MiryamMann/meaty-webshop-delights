@@ -5,7 +5,7 @@ namespace Bl.Moduls;
 
 public partial class BlClient
 {
-    public string Id { get; set; } = null!;
+    public int Id { get; set; }
 
     public string? FirstName { get; set; }
 

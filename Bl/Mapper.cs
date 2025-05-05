@@ -146,7 +146,7 @@ namespace Bl
         {
             return new ClientSignUpDto
             {
-                Id = client.Id,
+              
                 FirstName = client.FirstName,
                 LastName = client.LastName,
                 Email = client.Email,
@@ -160,7 +160,7 @@ namespace Bl
 
             return new Client
             {
-                Id = blClient.Id,
+                
                 FirstName = blClient.FirstName,
                 LastName = blClient.LastName,
                 AddressId = addressId, // ⬅️ שימו לב: מקבל AddressId מבחוץ

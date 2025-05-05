@@ -29,19 +29,13 @@ namespace Bl.Services
         }
         #region Athentication
 
-        public async Task<bool> LogIn(string email, string password)
-        {
-            var loginResult = await LoginWithTokensAsync(new ClientLoginDto
-            {
-                Email = email,
-                Password = password
-            });
 
-            return loginResult != null;
 
-        }
         public async Task<bool> SignUpAsync(ClientSignUpDto signUpDto)
         {
+            if (await DalClientService.ExistsByEmailAsync(signUpDto.Email))
+                return false;
+
             var address = new Address
             {
                 Street = signUpDto.Address.Street,
@@ -50,10 +44,15 @@ namespace Bl.Services
                 BuildingNumber = signUpDto.Address.BuildingNumber
             };
 
-            await DalClientService.AddAddressAsync(address); 
-            int addresId = (int)address.Id;
+            await DalClientService.AddAddressAsync(address);
 
-            var client = Mapper.ToDalClient(signUpDto, addresId);
+            if (address.Id == 0)
+                throw new Exception("Address insertion failed.");
+
+            var client = Mapper.ToDalClient(signUpDto, (int)address.Id);
+
+            var hasher = new PasswordHasher<Client>();
+            client.Password = hasher.HashPassword(client, signUpDto.Password);
 
             return await DalClientService.SignUpAsync(client);
         }
@@ -93,34 +92,24 @@ namespace Bl.Services
             };
         }
 
-        public async Task<LoginResponseDto?> LoginWithTokensAsync(ClientLoginDto dto)
+        public async Task<ClientLoginDto?> LoginAsync(ClientLoginDto loginDto)
         {
-            var dalClient = DalClientService.GetClientByEmail(dto.Email);
-            if (dalClient == null)
-                return null; // או זריקת שגיאה מותאמת
+            var client = await DalClientService.GetByEmailAndPasswordAsync(loginDto.Email, loginDto.Password);
 
-            var blClient = Mapper.ToBlClient(dalClient);
+            if (client == null)
+                return null;
+            var hasher = new PasswordHasher<Client>();
+            client.Password = hasher.HashPassword(client, loginDto.Password);
 
-            // שינוי קריטי כאן - שימוש ב-PasswordHasher
-            var passwordVerificationResult = _passwordHasher.VerifyHashedPassword(blClient, dalClient.Password, dto.Password);
-            if (passwordVerificationResult != PasswordVerificationResult.Success)
-                return null; // או זריקת שגיאה מתאימה
-
-            var accessToken = _jwtService.GenerateToken(blClient);
-            var refreshToken = _jwtService.GenerateRefreshToken();
-
-            dalClient.RefreshToken = refreshToken;
-            dalClient.RefreshTokenExpiry = DateTime.UtcNow.AddDays(7);
-
-            await DalClientService.UpdateAsync(dalClient);
-
-            return new LoginResponseDto
+            return new ClientLoginDto
             {
-                AccessToken = accessToken,
-                RefreshToken = refreshToken
+                Password = client.Password,
+                Email = client.Email,
             };
         }
+
         #endregion
+        #region Product
 
         public bool AddProduct(BlOrderItem orderItem)
         {
@@ -140,12 +129,31 @@ namespace Bl.Services
             }
             return false;
         }
+        public bool RemoveProduct(BlOrderItem orderItem, BlOrder createOrder)
+        {
+            return true; // עוד לא מיושם
+        }
+        public List<BlProduct> GetAllProducts()
+        {
+            if (DalClientService == null)
+            {
+                Console.WriteLine("DalClientService is null!");
+                return null;
+            }
+            var products = DalClientService.GetAllProducts();
+            return Mapper.ToListBlProduct(products);
+        }
+
+        #endregion
+        #region Order
 
         public async Task<bool> AddOrder(ClientSignUpDto clientDto, BlOrder order)
         {
-            if (DalClientService.ClientExist(clientDto.Id) == null)
+            if (DalClientService.ClientExist(clientDto.Password) == null)
             {
-                if (!await LogIn(clientDto.Email, clientDto.Password))
+
+
+                if (!await DalClientService.LogIn(clientDto.Email, clientDto.Password))
                 {
                     return false;//לזמן את SIGN UP
                 }
@@ -180,44 +188,6 @@ namespace Bl.Services
             }
             return true;
         }
-
-        public bool RemoveProduct(BlOrderItem orderItem, BlOrder createOrder)
-        {
-            return true; // עוד לא מיושם
-        }
-
-        private BlOrder GetOrderById(long orderId)
-        {
-            var dalOrder = DalClientService.GetOrderById(orderId);
-            if (dalOrder == null) return null;
-
-            return Mapper.ToBlOrder(dalOrder);
-        }
-
-     
-
-        public Order BeginOrder(string clientId)
-        {
-            return null; // עוד לא מיושם
-        }
-
-        public List<BlOrder> GetAllOrders(string clientId)
-        {
-            var orders = DalClientService.GetAllOrders(clientId);
-            return Mapper.ToListBlOrder(orders);
-        }
-
-        public List<BlProduct> GetAllProducts()
-        {
-            if (DalClientService == null)
-            {
-                Console.WriteLine("DalClientService is null!");
-                return null;
-            }
-            var products = DalClientService.GetAllProducts();
-            return Mapper.ToListBlProduct(products);
-        }
-
         BlOrder IBLClientServices.GetOrderById(long orderId)
         {
             return GetOrderById(orderId);
@@ -233,19 +203,43 @@ namespace Bl.Services
             throw new NotImplementedException();
         }
 
-        public BlClient ClientExist(string clientId)
+        private BlOrder GetOrderById(long orderId)
         {
-            return null; // עוד לא מיושם
+            var dalOrder = DalClientService.GetOrderById(orderId);
+            if (dalOrder == null) return null;
+
+            return Mapper.ToBlOrder(dalOrder);
         }
+
 
         public BlOrder OrderExist(BlOrder order)
         {
             return Mapper.ToBlOrder(DalClientService.OrderExist(Mapper.ToDalOrder(order)));
         }
-
-        public bool SignUp(ClientSignUpDto client)
+        public Order BeginOrder(string clientId)
         {
-            throw new NotImplementedException();
+            return null; // עוד לא מיושם
         }
+
+        public List<BlOrder> GetAllOrders(string clientId)
+        {
+            var orders = DalClientService.GetAllOrders(clientId);
+            return Mapper.ToListBlOrder(orders);
+        }
+
+
+        #endregion
+        #region Client
+
+        public async Task<bool> ExistsByEmailAsync(string email)
+        {
+            return await DalClientService.ExistsByEmailAsync(email);
+        }
+
+
+        #endregion
+
+
+
     }
 }

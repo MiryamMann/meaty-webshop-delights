@@ -44,7 +44,7 @@
   {
     "ContainingType": "web_api.Controllers.ClientController",
     "Method": "GoogleLogin",
-    "RelativePath": "api/Client/google",
+    "RelativePath": "api/Client/Google",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -60,7 +60,7 @@
   {
     "ContainingType": "web_api.Controllers.ClientController",
     "Method": "Login",
-    "RelativePath": "api/Client/login",
+    "RelativePath": "api/Client/Login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

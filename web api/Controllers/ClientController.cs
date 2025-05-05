@@ -1,16 +1,11 @@
 ﻿using Bl;
 using Bl.API.BTOs;
-using Bl.API.DTOs;
-using Bl.Moduls;
 using Bl.Services;
-using Dal;
-using Dal.models;
-using Dal.Services;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Google.Apis.Auth;
+using Bl.API.DTOs;
 
 namespace web_api.Controllers
 {
@@ -24,34 +19,54 @@ namespace web_api.Controllers
         {
             _blManager = i;
         }
-        [HttpPost("login")]
+        [HttpPost("Login")]
         public async Task<IActionResult> Login([FromBody] ClientLoginDto loginDto)
         {
-            var loginResponse = await _blManager.ClientService.LoginWithTokensAsync(loginDto);
+            // ניסיון להתחבר דרך שכבת BL
+            var client = await _blManager.ClientService.LoginAsync(loginDto);
 
-            if (loginResponse == null)
-                return Unauthorized("Invalid credentials");
+            if (client == null)
+                return Unauthorized("Email or password is incorrect.");
 
-            return Ok(loginResponse); // מחזיר גם AccessToken וגם RefreshToken
+            // יצירת מחולל טוקנים
+            var tokenService = new TokenService(HttpContext.RequestServices.GetRequiredService<IConfiguration>());
+
+            // הפקת טוקן עם מידע על המשתמש
+            var token = tokenService.GenerateToken(
+                email: client.Email,
+                role: "Client",
+                clientId: client.Password.ToString()
+            );
+
+            // החזרת הטוקן ל-React
+            return Ok(new
+            {
+                token,
+                client = new
+                {
+                    client.Password,
+                    client.Email,
+                    
+                }
+            });
         }
-        [HttpPost("SignUp")]//יוצרת טוקן
-
+        [HttpPost("SignUp")]
         public async Task<IActionResult> SignUp([FromBody] ClientSignUpDto signUpDto)
         {
             var success = await _blManager.ClientService.SignUpAsync(signUpDto);
-            if (success)
-                return Ok(new { Message = "Client created successfully." });
 
-            return BadRequest("Failed to create client.");
+            if (!success)
+                return BadRequest("Sign up failed. Email might already be in use.");
+
+            return Ok("User created successfully.");
         }
-        [HttpPost("google")]
+        [HttpPost("Google")]
         public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginDto model)
         {
             try
             {
                 var payload = await GoogleJsonWebSignature.ValidateAsync(model.IdToken);
 
-                // כאן את יכולה לבדוק אם המשתמש קיים, ואם לא – ליצור אותו
                 var user = new
                 {
                     Email = payload.Email,
@@ -59,7 +74,6 @@ namespace web_api.Controllers
                     GoogleId = payload.Subject
                 };
 
-                // אם יש לך JWT משלך, את יכולה להחזיר אותו עכשיו
                 return Ok(user);
             }
             catch (Exception ex)
@@ -85,9 +99,9 @@ namespace web_api.Controllers
         public async Task<IActionResult> AddOrder([FromBody] AddOrderRequestDto order)
         {
             {
-                    if (!User.Identity.IsAuthenticated)
-    
-                         return Unauthorized("The token is not recognised succsessfully. Make sure your contact details are correct");
+                if (!User.Identity.IsAuthenticated)
+
+                    return Unauthorized("The token is not recognised succsessfully. Make sure your contact details are correct");
 
 
                 var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -99,17 +113,8 @@ namespace web_api.Controllers
                 }
 
                 return Unauthorized();
-           }
+            }
         }
-        //[HttpPut("AddProduct")]
-        //public IActionResult AddProduct(BlProduct product, string clientId)
-        //{
-        //    var dalProduct = Mapper.ToDalProduct(product);
-        //    _blManager.ClientService.AddProduct(product, clientId);
-        //    if (_blManager.ClientService.AddProduct(product, clientId)) ;
-        //    return Ok(dalProduct);
-        //    return BadRequest();// DAL מקבל Product
-        //}
         [HttpDelete("RemoveProduct")]//לא צריך טוקן. השאלה היא מה קורה אם אחרי יצירת הזמנה רוצים לעדכן את ההזמנה, ואז כן צריך טוקן. 
         public IActionResult RemoveProduct([FromBody]IBLManager bLManager)
         {

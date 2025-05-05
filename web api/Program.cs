@@ -81,7 +81,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
         policy =>
         {
-            policy.WithOrigins("http://localhost:5174") // 👈 זו הכתובת שלך
+            policy.WithOrigins("http://localhost:5173") // 👈 זו הכתובת שלך
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });

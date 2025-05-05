@@ -14,23 +14,30 @@ namespace Bl.API
 {
     public interface IBLClientServices
     {
+        #region Order
         public BlOrder GetOrderById(long orderId);
-        
-      bool RemoveProduct(BlOrderItem orderItem,BlOrder createOrder);
-       List<BlProduct> GetAllProducts();
         List<BlOrder> GetAllOrders(string clientId);
+        BlOrder OrderExist(BlOrder order);
+
         bool IsOrderContainsOrderItem(BlOrder order, BlOrderItem orderItem);
         BlOrder FindOrderOfOrderItem(BlOrderItem orderItem);
-        Task<bool> LogIn(string email, string password);
-        BlClient ClientExist(string clientId);
-        bool SignUp(ClientSignUpDto client);
         public Task<bool> AddOrder(ClientSignUpDto client, BlOrder order);
         bool CreateNewOrder(BlOrder order);
-        BlOrder OrderExist(BlOrder order);
-        bool AddProduct(BlOrderItem orderItem);
-        Task<LoginResponseDto?> LoginWithTokensAsync(ClientLoginDto dto);
-        Task<bool> SignUpAsync(ClientSignUpDto signUpDto);
 
+        #endregion
+        #region Product
+        bool RemoveProduct(BlOrderItem orderItem, BlOrder createOrder);
+        List<BlProduct> GetAllProducts(); 
+        bool AddProduct(BlOrderItem orderItem);
+        #endregion
+        #region Athentication
+        Task<ClientLoginDto?> LoginAsync(ClientLoginDto loginDto);
+        Task<bool> SignUpAsync(ClientSignUpDto dto);
+        #endregion
+        #region Client
+        Task<bool> ExistsByEmailAsync(string email);
+
+        #endregion
 
     }
 }

@@ -89,7 +89,8 @@ public partial class dbClass : DbContext
             entity.Property(e => e.Id)
                 .HasMaxLength(10)
                 .IsFixedLength()
-                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS").
+                ValueGeneratedOnAdd();
             entity.Property(e => e.Email)
                 .HasMaxLength(50)
                 .IsFixedLength()
@@ -103,7 +104,7 @@ public partial class dbClass : DbContext
                 .IsFixedLength()
                 .UseCollation("SQL_Latin1_General_CP1_CI_AS");
             entity.Property(e => e.Password)
-                .HasMaxLength(256)
+                .HasMaxLength(500)
                 .IsUnicode()
                 .UseCollation("SQL_Latin1_General_CP1_CI_AS");
         });

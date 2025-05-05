@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Dal.models;
 
 public partial class Client
 {
-    public string Id { get; set; } = null!;
+    [Key]
+    public int Id { get; set; } 
 
     public string? FirstName { get; set; }
 

@@ -99,6 +99,17 @@ namespace Dal.Services
             return _context.Clients.FirstOrDefault(c => c.Id.Equals(clientId));
 
         }
+        public async Task<bool> ExistsByEmailAsync(string email)
+        {
+            return await _context.Clients.AnyAsync(c => c.Email == email);
+        }
+        public async Task<Client?> GetByEmailAndPasswordAsync(string email, string password)
+        {
+            return await _context.Clients
+                .FirstOrDefaultAsync(c => c.Email == email && c.Password == password);
+        }
+
+
         #endregion
         #region Athentication
         public async Task<bool> SignUpAsync(Client client)
