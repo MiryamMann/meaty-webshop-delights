@@ -345,6 +345,10 @@
             "type": "string",
             "format": "date-time",
             "nullable": true
+          },
+          "googleId": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

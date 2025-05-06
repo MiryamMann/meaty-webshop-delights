@@ -107,6 +107,28 @@ namespace Bl.Services
                 Email = client.Email,
             };
         }
+        public async Task<Client> GetOrCreateGoogleClientAsync(string email, string name, string googleId)
+        {
+            var client = await GetClientByEmailAsync(email);
+            if (client == null)
+            {
+                client = new Client
+                {
+                    Email = email,
+                    FirstName = name,
+                    GoogleId = googleId
+                };
+
+                await DalClientService.SignUpAsync(client);
+            }
+
+            return client;
+        }
+        public async Task<Client?> GetClientByEmailAsync(string email)
+        {
+          return  DalClientService.GetClientByEmail(email);
+        }
+
 
         #endregion
         #region Product

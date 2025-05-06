@@ -20,5 +20,7 @@ public partial class Client
     public string Password { get; set; } = null!;
     public string? RefreshToken { get; set; }
     public DateTime? RefreshTokenExpiry { get; set; }
+    public string? GoogleId { get; set; } 
+
 
 }
