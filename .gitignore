@@ -1,0 +1,14 @@
+# Build artifacts
+bin
+obj
+.dll
+.pdb
+
+# VS local files
+.vs
+.user
+.suo
+
+# Others
+.cache
+.log
