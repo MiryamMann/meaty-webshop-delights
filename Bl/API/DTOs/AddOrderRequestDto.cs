@@ -9,7 +9,7 @@ namespace Bl.API.DTOs
 {
     public class AddOrderRequestDto
     {
-        public BlOrder Order { get; set; } = null!;
+        public OrderDto Order { get; set; } = null!;
         public ClientSignUpDto Client { get; set; } = null!;
     }
 }

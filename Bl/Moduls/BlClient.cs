@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dal.models;
+using System;
 using System.Collections.Generic;
 
 namespace Bl.Moduls;
@@ -19,5 +20,10 @@ public partial class BlClient
     public string? RefreshToken { get; set; }
     public DateTime? RefreshTokenExpiry { get; set; }
     public string? GoogleId { get; set; }
+    public string PhoneNumber { get; set; } = null!;
 
+    public static implicit operator BlClient(Client v)
+    {
+        throw new NotImplementedException();
+    }
 }

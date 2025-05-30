@@ -14,7 +14,6 @@ namespace Bl
 {
     public class Mapper
     {
-        // ===== DAL → BL =====
         public static BlOrder ToBlOrder(Order dalOrder)
         {
             if (dalOrder == null) return null;
@@ -30,7 +29,7 @@ namespace Bl
            };
             foreach (var item in dalOrder.OrderItems)
             {
-                blOrder.OrderItems.Add(Mapper.ToBlOrderItem(item)); // הנח שיש מתודה הממירה פריט להזמנה
+                blOrder.OrderItems.Add(Mapper.ToBlOrderItem(item)); 
             }
 
             return blOrder;
@@ -61,19 +60,20 @@ namespace Bl
             };
         }
 
-        public static BlClient ToBlClient(Client dalClient)
+       
+        public static BlOrder MapDtoToBlOrder(OrderDto dto, long addressId)
         {
-            if (dalClient == null) return null;
-            return new BlClient
+            return new BlOrder
             {
-                Id = dalClient.Id,
-                FirstName = dalClient.FirstName,
-                LastName = dalClient.LastName,
-                AddressId = dalClient.AddressId,
-                Email = dalClient.Email,
-                Password = dalClient.Password
+                ClientId = dto.ClientId,
+                OrderDate = dto.OrderDate,
+                TotalPrice = dto.TotalPrice,
+                StatusId = dto.StatusId,
+                AddressId = addressId,
+                OrderItems = dto.OrderItems 
             };
         }
+
 
         public static BlOrderItem ToBlOrderItem(OrderItem dalOrderItem)
         {
@@ -110,7 +110,6 @@ namespace Bl
             return dalProducts?.ConvertAll(ToBlProduct);
         }
 
-        // ===== BL → DAL =====
         public static Order ToDalOrder(BlOrder blOrder)
         {
             if (blOrder == null) return null;
@@ -180,7 +179,26 @@ namespace Bl
                 Zip = blAddress.Zip,
                 BuildingNumber = blAddress.BuildingNumber,
                 ApartmentNumber = blAddress.ApartmentNumber,
-                EntryBuilding = blAddress.EntryBuilding
+                EntryBuilding = blAddress.EntryBuilding,
+            };
+        }
+        public static BlClient ToBlClient(Client dalClient)
+        {
+            if (dalClient == null)
+                return null;
+
+            return new BlClient
+            {
+                Id = dalClient.Id,
+                FirstName = dalClient.FirstName,
+                LastName = dalClient.LastName,
+                Email = dalClient.Email,
+                Password = dalClient.Password,
+                PhoneNumber = dalClient.PhoneNumber,
+                AddressId = dalClient.AddressId,
+                GoogleId = dalClient.GoogleId,
+                RefreshToken = dalClient.RefreshToken,
+                RefreshTokenExpiry = dalClient.RefreshTokenExpiry
             };
         }
 
@@ -206,49 +224,26 @@ namespace Bl
                 ProductId = blOrderItem.ProductId
             };
         }
-        public static DalManager ToDalManager(BLManager blManager)
+        
+        public static Client ToDalClient(BlClient blClient)
         {
-            if (blManager == null) return null;
-
-            return new DalManager
-            {
-                ClientService = blManager.ClientService != null
-                    ? ToDalClientService(blManager.ClientService)
-                    : null,
-                OrderService = blManager.OrderService != null
-                    ? ToDalOrderService(blManager.OrderService)
-                    : null
-            };
-        }
-        private static IDalClientService ToDalClientService(IBLClientServices blClientService)
-        {
-            // כאן את יכולה להחזיר אובייקט שמממש את הממשק מתוך BL, אם יש התאמה
-            // לדוגמה:
-            return new DalClientService(); // או המרה עם תוכן, תלוי במימוש שלך
-        }
-
-        private static IDalOrderService ToDalOrderService(IBLOrderServices blOrderService)
-        {
-            return new DalOrderService();
-        }
-        public static DalManager ToDalManagerFromProduct(Product product)
-        {
-            if (product == null)
+            if (blClient == null)
                 return null;
 
-            // יוצרים אובייקט של DalClientService עם פונקציה שתדע לטפל במוצר הזה
-            var dalClientService = new DalClientService();
-
-            var dalManager = new DalManager
+            return new Client
             {
-                ClientService = dalClientService,
-                // אם יש לך גם OrderService – את יכולה להוסיף גם אותו
-                OrderService = new DalOrderService()
+                Id = blClient.Id,
+                Email = blClient.Email,
+                FirstName = blClient.FirstName,
+                LastName = blClient.LastName,
+                AddressId = blClient.AddressId,
+                GoogleId = blClient.GoogleId,
+                Password = blClient.Password,
+                RefreshToken = blClient.RefreshToken,
+                RefreshTokenExpiry = blClient.RefreshTokenExpiry
             };
-
-            return dalManager;
         }
-        
+
 
     }
 

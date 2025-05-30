@@ -9,22 +9,31 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using Dal.API;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
+// הרשמות לשירותים
+builder.Services.AddScoped<IClientDal, DalClientService>();
+builder.Services.AddScoped<IClientAuthDal, DalClientService>();
+builder.Services.AddScoped<IProductDal, DalProductService>();
 builder.Services.AddScoped<IBLManager, BLManager>();
 builder.Services.AddScoped<IDalManager, DalManager>();
-builder.Services.AddScoped<IBLOrderServices, BLOrderService>();
-builder.Services.AddScoped<IBLClientServices, BLClientService>();
-builder.Services.AddScoped<IDalClientService, DalClientService>();
+builder.Services.AddScoped<IClientAuthService, ClientAuthService>();
+builder.Services.AddScoped<IClientService, ClientService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.AddScoped<IOrderDal, Dal.Services.OrderService>();
+builder.Services.AddScoped<IOrderService, Bl.Services.OrderService>();
+builder.Services.AddScoped<IOrderManagmentService, OrderManagmentService>();
 
 builder.Services.AddDbContext<dbClass>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// Controllers
 builder.Services.AddControllers();
 
+// Swagger + הגדרות טוקן
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -54,6 +63,7 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+// 🟢 Authentication - תואם להגדרות Jwt בקובץ appsettings.json
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -67,28 +77,30 @@ builder.Services.AddAuthentication(options =>
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration["JwtSettings:Issuer"],
-        ValidAudience = builder.Configuration["JwtSettings:Audience"],
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        ValidAudience = builder.Configuration["Jwt:Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(
-            Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:SecretKey"]))
+            Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
     };
 });
-// Enable CORS for frontend access
-var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
+// CORS
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
         policy =>
         {
-            policy.WithOrigins("http://localhost:5174") // 👈 זו הכתובת שלך
+            policy.WithOrigins("http://localhost:5174")
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });
 });
+
 var app = builder.Build();
 app.UseCors(MyAllowSpecificOrigins);
 
+// Swagger
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -98,9 +110,9 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-
 app.UseHttpsRedirection();
 
+// 🟢 חובה לשים לפני MapControllers
 app.UseAuthentication();
 app.UseAuthorization();
 

@@ -1,9 +1,57 @@
 [
   {
+    "ContainingType": "web_api.Controllers.AuthController",
+    "Method": "GoogleLogin",
+    "RelativePath": "api/auth/Google",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Bl.API.DTOs.GoogleLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "web_api.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/auth/LogIn",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Bl.API.BTOs.ClientLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "web_api.Controllers.AuthController",
+    "Method": "SignUp",
+    "RelativePath": "api/auth/SignUp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Bl.API.DTOs.ClientSignUpDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "web_api.Controllers.ClientController",
     "Method": "AddOrder",
     "RelativePath": "api/Client/AddOrder",
-    "HttpMethod": "PUT",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -16,15 +64,31 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "web_api.Controllers.ClientController",
+    "ContainingType": "OrderController",
+    "Method": "CreateOrder",
+    "RelativePath": "api/Order/CreateOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Bl.API.DTOs.AddOrderRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrderController",
     "Method": "GetAllOrders",
-    "RelativePath": "api/Client/GetAllOrders",
+    "RelativePath": "api/Order/GetAllOrders",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "clientId",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -32,83 +96,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "web_api.Controllers.ClientController",
-    "Method": "GetAllProducts",
-    "RelativePath": "api/Client/GetAllProducts",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "web_api.Controllers.ClientController",
-    "Method": "GoogleLogin",
-    "RelativePath": "api/Client/Google",
+    "ContainingType": "OrderController",
+    "Method": "Payment",
+    "RelativePath": "api/Order/Payment",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "model",
-        "Type": "Bl.API.DTOs.GoogleLoginDto",
+        "Name": "order",
+        "Type": "Bl.API.DTOs.AddOrderRequestDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "web_api.Controllers.ClientController",
-    "Method": "Login",
-    "RelativePath": "api/Client/Login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "loginDto",
-        "Type": "Bl.API.BTOs.ClientLoginDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "web_api.Controllers.ClientController",
-    "Method": "RemoveProduct",
-    "RelativePath": "api/Client/RemoveProduct",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "bLManager",
-        "Type": "Bl.IBLManager",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "web_api.Controllers.ClientController",
-    "Method": "SignUp",
-    "RelativePath": "api/Client/SignUp",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "signUpDto",
-        "Type": "Bl.API.DTOs.ClientSignUpDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "web_api.Controllers.OrderController",
+    "ContainingType": "web_api.Controllers.OrderManagmentController",
     "Method": "GetAllOrders",
-    "RelativePath": "api/Order",
+    "RelativePath": "api/OrderManagment",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -116,9 +122,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "web_api.Controllers.OrderController",
+    "ContainingType": "web_api.Controllers.OrderManagmentController",
     "Method": "SuspendeOrder",
-    "RelativePath": "api/Order",
+    "RelativePath": "api/OrderManagment",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -126,13 +132,44 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "web_api.Controllers.OrderController",
+    "ContainingType": "web_api.Controllers.OrderManagmentController",
     "Method": "UnsuspendeOrder",
-    "RelativePath": "api/Order",
+    "RelativePath": "api/OrderManagment",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "web_api.Controllers.ProductController",
+    "Method": "GetAllProduct",
+    "RelativePath": "api/product/GetAllProducts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "web_api.Controllers.ProductController",
+    "Method": "RemoveProduct",
+    "RelativePath": "api/product/remove",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "Bl.Moduls.BlOrderItem",
+        "IsRequired": true
+      },
+      {
+        "Name": "orderId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   }
 ]

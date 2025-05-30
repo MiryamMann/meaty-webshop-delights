@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dal.Models;
-
-namespace Dal.API
+using Bl.Moduls;
+namespace Bl.API
 {
-    public interface IDalOrderService
+    public interface IOrderManagmentService
     {
-        List<Order> GetAllOrders();
+        List<BlOrder> GetAllOrders();
         bool SuspendeOrder();
-
 
         bool UnsuspendeOrder();
 

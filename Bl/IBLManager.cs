@@ -1,23 +1,30 @@
 ﻿using Bl.API;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Bl.Moduls;
+using Bl.Services;
+using System.Collections.Generic;
+using System.Collections.Generic;
+
 namespace Bl
 {
     public interface IBLManager
     {
-        public BlAddress Address { get; set; }
-        public List<BlAddress> Addresses { get; set; }
-        public BlCategory Category { get; set; }
-        public BlClient Client { get; set; }
-        public BlOrder Order { get; set; }
-        public BlOrderItem OrderItem { get; set; }
-        public BlProduct Product { get; set; }
-        public IBLOrderServices OrderService { get; set; }
-        public IBLClientServices ClientService { get; set; }
+        // Entities (לא חובה לחשוף, אבל אם נדרש – השאר)
+        BlAddress Address { get; set; }
+        BlCategory Category { get; set; }
+        BlClient Client { get; set; }
+        BlOrder Order { get; set; }
+        BlOrderItem OrderItem { get; set; }
+        BlProduct Product { get; set; }
+        List<BlAddress> Addresses { get; set; }
+
+        // Services
+        IClientAuthService ClientAuthService { get; set; }
+        IOrderService OrderService { get; set; }
+        IProductService ProductService { get; set; }
+        IOrderManagmentService OrderManagementService { get; set; }
+         IClientService ClientService { get; set; }
 
     }
 }
+
+

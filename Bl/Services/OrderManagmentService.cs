@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Bl.Services
 {
-    public class BLOrderService : IBLOrderServices
+    public class OrderManagmentService : IOrderManagmentService
     {
         private string connectionString = "your_connection_string_here";
         public List<BlOrder> GetAllOrders()

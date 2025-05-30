@@ -11,7 +11,7 @@ namespace Bl.API.DTOs
         {
             public string Street { get; set; } = null!;
             public string City { get; set; } = null!;
-        public string ZipCode { get; set; } = null!;         
+             public string ZipCode { get; set; } = null!;         
             public string BuildingNumber { get; set; } = null!;
     }
 

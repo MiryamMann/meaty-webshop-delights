@@ -14,6 +14,7 @@ namespace Bl.API.DTOs
         public string Email { get; set; } = null!;
         public string Password { get; set; } = null!;
         public AddressDto Address { get; set; } = null!;
+        public string PhoneNumber { get; set; } = null!;
     }
 
 }

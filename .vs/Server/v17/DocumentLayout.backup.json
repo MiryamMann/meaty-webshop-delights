@@ -1,86 +1,149 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\",
+  "WorkspaceRootPath": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\bl\\services\\blclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\services\\blclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\web api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|solutionrelative:web api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\dal\\services\\dalclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\services\\dalclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\api\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\api\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\dal\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\web api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|solutionrelative:web api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\bl\\api\\dtos\\clientsignupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\api\\dtos\\clientsignupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\bl\\api\\dtos\\clientlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\api\\dtos\\clientlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\api\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\api\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\bl\\moduls\\blclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\moduls\\blclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\bl\\api\\iblclientservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\api\\iblclientservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\web api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\web api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|solutionrelative:web api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\bl\\api\\dtos\\googlelogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\api\\dtos\\googlelogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\web api\\controllers\\ordermanagmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|solutionrelative:web api\\controllers\\ordermanagmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\web api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\web api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|solutionrelative:web api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\api\\iclientauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\api\\iclientauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\services\\clientauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\services\\clientauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\dal\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\dal\\api\\iclientauthdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\iclientauthdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\api\\dtos\\clientsignupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\api\\dtos\\clientsignupdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\web api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|solutionrelative:web api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\dal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\bl\\moduls\\blorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\moduls\\blorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\web api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|solutionrelative:web api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\bl\\moduls\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\moduls\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\bl\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\bl\\api\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\api\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\api\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\api\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\dal\\models\\dbclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\models\\dbclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\api\\dtos\\clientlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\api\\dtos\\clientlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\bl\\bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\bl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\web api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2BCB7D8-24D2-4A06-A37A-854F39D08BBA}|web api\\web api.csproj|solutionrelative:web api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\dal\\api\\idalclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\idalclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\full_stack_haker_web\\full_stack_haker_web\\full_stack_haker_web\\bl\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\dal\\services\\ordersrevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\services\\ordersrevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\dal\\services\\ordermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\services\\ordermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\This User\\Downloads\\BLClientService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\api\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\api\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\dal\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\moduls\\blclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\moduls\\blclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\api\\dtos\\googlelogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\api\\dtos\\googlelogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\dal\\api\\iclientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\iclientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\dal\\api\\iorderdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\iorderdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\dal\\dalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\dalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\dal\\idalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\idalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\dal\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\dal\\api\\iproductdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\iproductdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\dal\\api\\iordermanagementdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D9A3F7-AA50-43E9-BFC4-1407A0DC792D}|Dal\\Dal.csproj|solutionrelative:dal\\api\\iordermanagementdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|c:\\users\\this user\\documents\\limodim\\hacker\\server\\bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94D6DF0-8228-4656-9748-CC724A89584E}|Bl\\Bl.csproj|solutionrelative:bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,7 +153,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,256 +165,442 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BLClientService.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Services\\BLClientService.cs",
-              "RelativeDocumentMoniker": "Bl\\Services\\BLClientService.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Services\\BLClientService.cs*",
-              "RelativeToolTip": "Bl\\Services\\BLClientService.cs*",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAHcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T19:17:18.081Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GoogleLoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\API\\DTOs\\GoogleLoginDto.cs",
-              "RelativeDocumentMoniker": "Bl\\API\\DTOs\\GoogleLoginDto.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\API\\DTOs\\GoogleLoginDto.cs",
-              "RelativeToolTip": "Bl\\API\\DTOs\\GoogleLoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T18:35:00.197Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IBLClientServices.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\API\\IBLClientServices.cs",
-              "RelativeDocumentMoniker": "Bl\\API\\IBLClientServices.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\API\\IBLClientServices.cs",
-              "RelativeToolTip": "Bl\\API\\IBLClientServices.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAhwCEAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T19:54:22.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Dal\\Models\\Client.cs",
-              "RelativeDocumentMoniker": "Dal\\Models\\Client.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Dal\\Models\\Client.cs",
-              "RelativeToolTip": "Dal\\Models\\Client.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA1AAAAAAAAAA==",
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\web api\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "web api\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\web api\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "web api\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA2wBMAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T20:21:33.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DalClientService.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Dal\\Services\\DalClientService.cs",
-              "RelativeDocumentMoniker": "Dal\\Services\\DalClientService.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Dal\\Services\\DalClientService.cs",
-              "RelativeToolTip": "Dal\\Services\\DalClientService.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAApwH4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T19:17:39.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ClientController.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\web api\\Controllers\\ClientController.cs",
-              "RelativeDocumentMoniker": "web api\\Controllers\\ClientController.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\web api\\Controllers\\ClientController.cs",
-              "RelativeToolTip": "web api\\Controllers\\ClientController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAcwBkAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T19:16:55.298Z",
+              "WhenOpened": "2025-05-22T12:04:08.483Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "BlClient.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Moduls\\BlClient.cs",
-              "RelativeDocumentMoniker": "Bl\\Moduls\\BlClient.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Moduls\\BlClient.cs",
-              "RelativeToolTip": "Bl\\Moduls\\BlClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\web api\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "web api\\Controllers\\ClientController.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\web api\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "web api\\Controllers\\ClientController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T20:42:18.931Z",
+              "WhenOpened": "2025-05-22T15:08:34.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\web api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "web api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\web api\\Controllers\\AuthController.cs*",
+              "RelativeToolTip": "web api\\Controllers\\AuthController.cs*",
+              "ViewState": "AgIAACEAAAAAAAAAAAAiwDoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:14:17.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ClientLoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\API\\DTOs\\ClientLoginDto.cs",
-              "RelativeDocumentMoniker": "Bl\\API\\DTOs\\ClientLoginDto.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\API\\DTOs\\ClientLoginDto.cs",
-              "RelativeToolTip": "Bl\\API\\DTOs\\ClientLoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\IOrderService.cs",
+              "RelativeDocumentMoniker": "Bl\\API\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\IOrderService.cs",
+              "RelativeToolTip": "Bl\\API\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T20:39:13.203Z",
+              "WhenOpened": "2025-05-22T12:18:18.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderManagmentController.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\web api\\Controllers\\OrderManagmentController.cs",
+              "RelativeDocumentMoniker": "web api\\Controllers\\OrderManagmentController.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\web api\\Controllers\\OrderManagmentController.cs",
+              "RelativeToolTip": "web api\\Controllers\\OrderManagmentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T12:26:36.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IClientAuthDal.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\API\\IClientAuthDal.cs",
+              "RelativeDocumentMoniker": "Dal\\API\\IClientAuthDal.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\API\\IClientAuthDal.cs",
+              "RelativeToolTip": "Dal\\API\\IClientAuthDal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T12:54:01.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IClientService.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\IClientService.cs",
+              "RelativeDocumentMoniker": "Bl\\API\\IClientService.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\IClientService.cs*",
+              "RelativeToolTip": "Bl\\API\\IClientService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T14:54:44.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ClientSignUpDto.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\API\\DTOs\\ClientSignUpDto.cs",
-              "RelativeDocumentMoniker": "Bl\\API\\DTOs\\ClientSignUpDto.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\API\\DTOs\\ClientSignUpDto.cs",
-              "RelativeToolTip": "Bl\\API\\DTOs\\ClientSignUpDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Bl\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\Services\\OrderService.cs",
+              "RelativeToolTip": "Bl\\Services\\OrderService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwF0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T20:22:04.52Z",
+              "WhenOpened": "2025-05-22T12:17:39.552Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "dbClass.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Dal\\Models\\dbClass.cs",
-              "RelativeDocumentMoniker": "Dal\\Models\\dbClass.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Dal\\Models\\dbClass.cs",
-              "RelativeToolTip": "Dal\\Models\\dbClass.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAwwFwAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "IClientAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\IClientAuthService.cs",
+              "RelativeDocumentMoniker": "Bl\\API\\IClientAuthService.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\IClientAuthService.cs",
+              "RelativeToolTip": "Bl\\API\\IClientAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T20:02:51.142Z"
+              "WhenOpened": "2025-05-22T12:05:48.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\web api\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "web api\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\web api\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "web api\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:09:05.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ClientAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\Services\\ClientAuthService.cs",
+              "RelativeDocumentMoniker": "Bl\\Services\\ClientAuthService.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\Services\\ClientAuthService.cs",
+              "RelativeToolTip": "Bl\\Services\\ClientAuthService.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAqwGEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:26:23.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClientService.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\Services\\ClientService.cs",
+              "RelativeDocumentMoniker": "Dal\\Services\\ClientService.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\Services\\ClientService.cs",
+              "RelativeToolTip": "Dal\\Services\\ClientService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAUwEMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:05:15.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ClientSignUpDto.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\DTOs\\ClientSignUpDto.cs",
+              "RelativeDocumentMoniker": "Bl\\API\\DTOs\\ClientSignUpDto.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\DTOs\\ClientSignUpDto.cs",
+              "RelativeToolTip": "Bl\\API\\DTOs\\ClientSignUpDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T19:21:25.468Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "LoginResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\API\\DTOs\\LoginResponseDto.cs",
-              "RelativeDocumentMoniker": "Bl\\API\\DTOs\\LoginResponseDto.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\API\\DTOs\\LoginResponseDto.cs",
-              "RelativeToolTip": "Bl\\API\\DTOs\\LoginResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\DTOs\\OrderDto.cs",
+              "RelativeDocumentMoniker": "Bl\\API\\DTOs\\OrderDto.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\DTOs\\OrderDto.cs",
+              "RelativeToolTip": "Bl\\API\\DTOs\\OrderDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T20:39:17.61Z"
+              "WhenOpened": "2025-05-28T16:29:32.502Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "Mapper.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Mapper.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\Mapper.cs",
               "RelativeDocumentMoniker": "Bl\\Mapper.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Mapper.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\Mapper.cs",
               "RelativeToolTip": "Bl\\Mapper.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAmwEIAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T20:22:50.011Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "JwtService.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Moduls\\JwtService.cs",
-              "RelativeDocumentMoniker": "Bl\\Moduls\\JwtService.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Moduls\\JwtService.cs",
-              "RelativeToolTip": "Bl\\Moduls\\JwtService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAlwBQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T20:44:06.433Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\web api\\appsettings.json",
-              "RelativeDocumentMoniker": "web api\\appsettings.json",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\web api\\appsettings.json",
-              "RelativeToolTip": "web api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-05T20:55:27.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Dal\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Dal\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Dal\\Models\\Product.cs",
-              "RelativeToolTip": "Dal\\Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T09:59:50.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\web api\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\web api\\Program.cs",
               "RelativeDocumentMoniker": "web api\\Program.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\web api\\Program.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\web api\\Program.cs",
               "RelativeToolTip": "web api\\Program.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAiwGwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAUwHkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T18:51:29.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T18:51:29.056Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BlOrder.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Moduls\\BlOrder.cs",
-              "RelativeDocumentMoniker": "Bl\\Moduls\\BlOrder.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Moduls\\BlOrder.cs",
-              "RelativeToolTip": "Bl\\Moduls\\BlOrder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "ClientLoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\DTOs\\ClientLoginDto.cs",
+              "RelativeDocumentMoniker": "Bl\\API\\DTOs\\ClientLoginDto.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\DTOs\\ClientLoginDto.cs",
+              "RelativeToolTip": "Bl\\API\\DTOs\\ClientLoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T08:43:08.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T09:25:54.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OrderManagement.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\Services\\OrderManagement.cs",
+              "RelativeDocumentMoniker": "Dal\\Services\\OrderManagement.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\Services\\OrderManagement.cs",
+              "RelativeToolTip": "Dal\\Services\\OrderManagement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:05:22.404Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "Bl.csproj",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Bl.csproj",
-              "RelativeDocumentMoniker": "Bl\\Bl.csproj",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Bl.csproj",
-              "RelativeToolTip": "Bl\\Bl.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-05T20:03:46.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "Bl\\Services\\TokenService.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Bl\\Services\\TokenService.cs",
-              "RelativeToolTip": "Bl\\Services\\TokenService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAawCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T19:53:24.173Z"
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\web api\\appsettings.json",
+              "RelativeDocumentMoniker": "web api\\appsettings.json",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\web api\\appsettings.json",
+              "RelativeToolTip": "web api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-23T10:31:59.016Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "IDalClientService.cs",
-              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Dal\\API\\IDalClientService.cs",
-              "RelativeDocumentMoniker": "Dal\\API\\IDalClientService.cs",
-              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Full_Stack_Haker_Web\\Dal\\API\\IDalClientService.cs",
-              "RelativeToolTip": "Dal\\API\\IDalClientService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowCAAAAAAAAAAAAAAAA==",
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "Bl\\Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\Services\\JwtService.cs",
+              "RelativeToolTip": "Bl\\Services\\JwtService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T20:06:51.91Z"
+              "WhenOpened": "2025-05-28T08:25:27.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderSrevice.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\Services\\OrderSrevice.cs",
+              "RelativeDocumentMoniker": "Dal\\Services\\OrderSrevice.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\Services\\OrderSrevice.cs",
+              "RelativeToolTip": "Dal\\Services\\OrderSrevice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:05:23.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ClientService.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\Services\\ClientService.cs",
+              "RelativeDocumentMoniker": "Bl\\Services\\ClientService.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\Services\\ClientService.cs",
+              "RelativeToolTip": "Bl\\Services\\ClientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T12:26:44.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BLClientService.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Downloads\\BLClientService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\BLClientService.cs",
+              "ToolTip": "C:\\Users\\This User\\Downloads\\BLClientService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\BLClientService.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAhwLMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T21:04:09.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "Dal\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\Models\\Client.cs",
+              "RelativeToolTip": "Dal\\Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T20:21:33.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IJwtService.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\IJwtService.cs",
+              "RelativeDocumentMoniker": "Bl\\API\\IJwtService.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\IJwtService.cs",
+              "RelativeToolTip": "Bl\\API\\IJwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T12:53:37.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BlClient.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\Moduls\\BlClient.cs",
+              "RelativeDocumentMoniker": "Bl\\Moduls\\BlClient.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\Moduls\\BlClient.cs",
+              "RelativeToolTip": "Bl\\Moduls\\BlClient.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvx0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T10:03:46.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GoogleLoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\DTOs\\GoogleLoginDto.cs",
+              "RelativeDocumentMoniker": "Bl\\API\\DTOs\\GoogleLoginDto.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\API\\DTOs\\GoogleLoginDto.cs",
+              "RelativeToolTip": "Bl\\API\\DTOs\\GoogleLoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T19:20:59.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IClientDal.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\API\\IClientDal.cs",
+              "RelativeDocumentMoniker": "Dal\\API\\IClientDal.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\API\\IClientDal.cs",
+              "RelativeToolTip": "Dal\\API\\IClientDal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T17:00:50.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IOrderDal.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\API\\IOrderDal.cs",
+              "RelativeDocumentMoniker": "Dal\\API\\IOrderDal.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\API\\IOrderDal.cs",
+              "RelativeToolTip": "Dal\\API\\IOrderDal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T12:24:15.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DalManager.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\DalManager.cs",
+              "RelativeDocumentMoniker": "Dal\\DalManager.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\DalManager.cs",
+              "RelativeToolTip": "Dal\\DalManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:05:24.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Bl\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\Services\\ProductService.cs",
+              "RelativeToolTip": "Bl\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T12:27:03.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IDalManager.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\IDalManager.cs",
+              "RelativeDocumentMoniker": "Dal\\IDalManager.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\IDalManager.cs",
+              "RelativeToolTip": "Dal\\IDalManager.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:05:25.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Dal\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\Services\\ProductService.cs",
+              "RelativeToolTip": "Dal\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:05:24.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IProductDal.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\API\\IProductDal.cs",
+              "RelativeDocumentMoniker": "Dal\\API\\IProductDal.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\API\\IProductDal.cs",
+              "RelativeToolTip": "Dal\\API\\IProductDal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T12:25:52.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IOrderManagementDal.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\API\\IOrderManagementDal.cs",
+              "RelativeDocumentMoniker": "Dal\\API\\IOrderManagementDal.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Dal\\API\\IOrderManagementDal.cs",
+              "RelativeToolTip": "Dal\\API\\IOrderManagementDal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T12:27:08.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "BLManager.cs",
+              "DocumentMoniker": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\BLManager.cs",
+              "RelativeDocumentMoniker": "Bl\\BLManager.cs",
+              "ToolTip": "C:\\Users\\This User\\Documents\\limodim\\Hacker\\Server\\Bl\\BLManager.cs",
+              "RelativeToolTip": "Bl\\BLManager.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T12:28:44.414Z"
             }
           ]
         }
