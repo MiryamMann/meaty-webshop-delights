@@ -1,47 +1,49 @@
-﻿using Bl;
-using Bl.API;
-using Microsoft.AspNetCore.Http;
+﻿using Bl.API;
+using Bl.API.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
-namespace web_api.Controllers
+[Route("api/[controller]")]
+[ApiController]
+public class OrderController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class OrderController : ControllerBase
+    private readonly IOrderService _orders;
+
+    public OrderController(IOrderService orders)
     {
-        IBLOrderServices OrderService;
-        public OrderController(IBLOrderServices _orderService)
-        {
-            OrderService = _orderService;
+        _orders = orders;
+    }
 
+    [HttpPost("CreateOrder")]
+    [Authorize]
+    public async Task<IActionResult> CreateOrder([FromBody] AddOrderRequestDto dto)
+    {
+        var result = await _orders.CreateOrderAsync(dto);
+        if (result) return Ok(result);
+        return StatusCode(500, "שגיאה בשמירת ההזמנה");
+    }
 
-        }
-        [HttpGet]
-        public IActionResult GetAllOrders()//Miri
-        {
+    [HttpGet("GetAllOrders")]
+    [Authorize]
+    public IActionResult GetAllOrders(string clientId)
+    {
+        var orders = _orders.GetAllOrders(clientId);
+        if (orders == null) return BadRequest();
+        return Ok(orders);
+    }
+    [HttpPost("Payment")]
+    [Authorize]
+    public async Task<IActionResult> Payment([FromBody] AddOrderRequestDto order)
+    {
+        if (!User.Identity.IsAuthenticated)
+            return Unauthorized("The token is not recognised successfully.");
 
-            if (OrderService.GetAllOrders() != null)
-                return Ok(OrderService.GetAllOrders());
-            return BadRequest();
-        }
-        [HttpPost]
-        public IActionResult SuspendeOrder()//miri
-        {
-            if (OrderService.SuspendeOrder())
-                return Ok();
-            return BadRequest();
-        }
-        [HttpDelete]
-        public IActionResult UnsuspendeOrder() {//tamar
-            if (OrderService.UnsuspendeOrder())
-                return Ok();
-            return BadRequest();
+        var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-        }
-       
+        if (await _orders.Payment(order))
+            return Ok(order);
+
+        return Unauthorized();
     }
 }
-
-        
-    
-

@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Bl.API;
 using Dal.API;
 using Dal.Models;
 using Microsoft.Data.SqlClient;
 namespace Bl.Services
 {
-    public class DalOrderService:IDalOrderService
+    public class OrderManagementService: IOrderManagementDal
     {
         public List<Order> GetAllOrders()
         {

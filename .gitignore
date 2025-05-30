@@ -1,0 +1,1 @@
+-e "bin/\nobj/\n.vs/\n*.dll\n*.pdb\n*.suo\n*.user\n*.cache\n*.log" 

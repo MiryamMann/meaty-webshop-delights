@@ -1,42 +1,40 @@
 ﻿using System;
+using Bl.API;
 using Bl.Moduls;
 using Bl.Services;
-using Bl.API;
-using Dal.API;
 
 namespace Bl
 {
     public class BLManager : IBLManager
     {
-        public BlAddress Address { get; set; }
-        public BlCategory Category { get; set; }
-        public BlClient Client { get; set; }
-        public BlOrder Order { get; set; }
-        public BlOrderItem OrderItem { get; set; }
-        public BlProduct Product { get; set; }
+        // Entities
+        public BlAddress Address { get; set; } = new();
+        public BlCategory Category { get; set; } = new();
+        public BlClient Client { get; set; } = new();
+        public BlOrder Order { get; set; } = new();
+        public BlOrderItem OrderItem { get; set; } = new();
+        public BlProduct Product { get; set; } = new();
+        public List<BlAddress> Addresses { get; set; } = new();
 
-        public IBLOrderServices OrderService { get; set; }
-        public IBLClientServices ClientService { get; set; }
-        public IDalClientService dalClientService { get; set; }
-        public List<BlAddress> Addresses { get; set; }
+        // Services
+        public IClientAuthService ClientAuthService { get; set; }
+        public IOrderService OrderService { get; set; }
+        public IProductService ProductService { get; set; }
+        public IOrderManagmentService OrderManagementService { get; set; }
+        public IClientService ClientService{ get; set; }
+
         public BLManager(
-            IDalClientService dalClientService,
-            IBLOrderServices orderService,
-            IJwtService jwtService)
+            IClientAuthService clientAuthService,
+            IOrderService orderService,
+            IProductService productService,
+            IOrderManagmentService orderManagementService)
         {
-            this.dalClientService = dalClientService ?? throw new ArgumentNullException(nameof(dalClientService));
-            this.OrderService = orderService ?? throw new ArgumentNullException(nameof(orderService));
-            this.ClientService = new BLClientService(this.dalClientService, jwtService);
+            ClientAuthService = clientAuthService ?? throw new ArgumentNullException(nameof(clientAuthService));
+            OrderService = orderService ?? throw new ArgumentNullException(nameof(orderService));
+            ProductService = productService ?? throw new ArgumentNullException(nameof(productService));
+            OrderManagementService = orderManagementService ?? throw new ArgumentNullException(nameof(orderManagementService));
 
-            Address = new BlAddress();
-            Category = new BlCategory();
-            Product = new BlProduct();
-            Order = new BlOrder();
-            OrderItem = new BlOrderItem();
-            Addresses = new List<BlAddress>();
-
-
-            Console.WriteLine("✅ BLManager initialized with all services.");
+            Console.WriteLine(" BLManager initialized with all injected services.");
         }
     }
 }

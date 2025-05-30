@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Bl.API;
 using Bl.Services;
 using Dal.API;
 using Dal.Models;
@@ -19,8 +18,10 @@ namespace Dal
         public Order order { get; set; }
         public OrderItem orderItem { get; set; }
         public Product product { get; set; }
-        public IDalOrderService OrderService { get; set; }
-        public IDalClientService ClientService { get; set; }
+        public IOrderManagementDal OrderService { get; set; }
+        public IClientAuthDal ClientAuthDal { get; set; }
+        public IClientDal ClientService { get; set; }
+
         private readonly dbClass _context;
         public DalManager()
         {
