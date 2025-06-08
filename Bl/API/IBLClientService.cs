@@ -7,7 +7,7 @@ using Bl.Moduls;
 using Dal.Models;
 
 namespace Bl.API
-{
+{//
     public interface IBLClientService
     {
         bool LogIn(string id, string passward);
@@ -15,7 +15,7 @@ namespace Bl.API
         bool LogOut();
         bool BeginOrder();
         public bool AddProductToOrder(IBLManager IBL, long orderId);
-         bool RemoveProduct(IBLManager IBL, long orderId);
+        bool RemoveProduct(IBLManager IBL, Order order);
         bool FinishOrder();
         bool Payment();
         List<BlOrder> GetAllOrders(string clientId);

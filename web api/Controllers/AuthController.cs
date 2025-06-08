@@ -3,12 +3,9 @@ using Bl.API.BTOs;
 using Bl.API.DTOs;
 using Bl.Moduls;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.AspNetCore.Identity;
+using Google.Apis.Auth;
 using System;
 using System.Threading.Tasks;
-using Google.Apis.Auth;
-using Microsoft.AspNetCore.Authorization;
 
 namespace web_api.Controllers
 {
@@ -30,27 +27,27 @@ namespace web_api.Controllers
         [HttpPost("LogIn")]
         public async Task<IActionResult> Login([FromBody] ClientLoginDto dto)
         {
-            Console.WriteLine(" Login endpoint called");
+            Console.WriteLine("🔐 Login endpoint called");
 
             try
             {
-                Console.WriteLine($" Received login attempt for email: {dto.Email}");
-
-                var blClient = await _authService.LoginAsync(dto); 
+                var blClient = await _authService.LoginAsync(dto);
 
                 if (blClient == null)
                 {
-                    Console.WriteLine(" Login failed: Invalid email or password.");
-                    return Unauthorized("Invalid email or password.");
+                    return Unauthorized(new { message = "המשתמש לא קיים. נא להירשם קודם." });
+                }
+
+                if (blClient.Id == -1)
+                {
+                    return Unauthorized(new { message = "הסיסמה שגויה. נסה שוב." });
                 }
 
                 var accessToken = _jwtService.GenerateToken(blClient);
                 var refreshToken = _jwtService.GenerateRefreshToken();
-                Console.WriteLine(blClient.Id);
-                Console.WriteLine(blClient.AddressId);
-                blClient.RefreshTokenExpiration = DateTime.UtcNow.AddDays(7);
+
                 blClient.RefreshToken = refreshToken;
-                blClient.RefreshTokenExpiration = DateTime.UtcNow.AddDays(7); // תוקף לשבוע
+                blClient.RefreshTokenExpiration = DateTime.UtcNow.AddDays(7);
                 await _authService.UpdateAsync(blClient);
 
                 return Ok(new
@@ -59,39 +56,52 @@ namespace web_api.Controllers
                     refreshToken,
                     addressId = blClient.AddressId,
                     clientId = blClient.Id,
-                    client = blClient 
+                    client = blClient
                 });
-
             }
             catch (Exception ex)
             {
-                Console.WriteLine($" Exception during login: {ex.Message}");
-                return StatusCode(500, new { error = "Internal server error", message = ex.Message });
+                Console.WriteLine($"🔥 Exception during login: {ex.Message}");
+                return StatusCode(500, new { message = "שגיאת שרת פנימית", error = ex.Message });
             }
         }
-
 
         [HttpPost("SignUp")]
         public async Task<IActionResult> SignUp([FromBody] ClientSignUpDto dto)
         {
-            Console.WriteLine(" Signup endpoint called");
+            Console.WriteLine("🆕 Signup endpoint called");
 
-            var client = await _authService.SignUpAsync(dto);
-            if (client==null)
+            try
             {
-                Console.WriteLine($"⚠ Signup failed: Email already exists - {dto.Email}");
-                return BadRequest("Email already exists.");
-            }
+                if (await _authService.ExistsByEmailAsync(dto.Email))
+                {
+                    Console.WriteLine($"⚠ Signup failed: Email already exists - {dto.Email}");
+                    return BadRequest(new { message = "אימייל זה כבר רשום במערכת." });
+                }
 
-            Console.WriteLine($" Signup succeeded for email: {dto.Email}");
-            return Ok(client);
+                var client = await _authService.SignUpAsync(dto);
+
+                if (client == null)
+                {
+                    Console.WriteLine("⚠ Signup failed: Error saving client.");
+                    return StatusCode(500, new { message = "שגיאה בשמירת המשתמש." });
+                }
+
+                Console.WriteLine($"✅ Signup succeeded for email: {dto.Email}");
+                return Ok(client);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Exception during signup: {ex.Message}");
+                return StatusCode(500, new { message = "שגיאת שרת פנימית", error = ex.Message });
+            }
         }
 
         [HttpPost("Google")]
         public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginDto dto)
         {
             if (string.IsNullOrWhiteSpace(dto.IdToken))
-                return BadRequest("Token is null or empty");
+                return BadRequest(new { message = "טוקן חסר או ריק." });
 
             try
             {
@@ -99,46 +109,56 @@ namespace web_api.Controllers
 
                 if (result == null)
                 {
-                    Console.WriteLine(" Google token validation failed.");
-                    return Unauthorized(new { error = "Invalid Google token" });
+                    Console.WriteLine("❌ Google token validation failed.");
+                    return Unauthorized(new { message = "הטוקן של Google לא תקין." });
                 }
 
-                Console.WriteLine(" Google login successful.");
-                return Ok(result); // מחזיר LoginResponseDto { accessToken, refreshToken }
+                Console.WriteLine("✅ Google login successful.");
+                return Ok(result);
             }
             catch (InvalidJwtException ex)
             {
-                Console.WriteLine(" Invalid token: " + ex.Message);
-                return Unauthorized(new { error = "Invalid Google token", message = ex.Message });
+                Console.WriteLine("❌ Invalid Google token: " + ex.Message);
+                return Unauthorized(new { message = "הטוקן של Google לא תקין.", error = ex.Message });
             }
             catch (Exception ex)
             {
-                Console.WriteLine(" General error: " + ex.Message);
-                return StatusCode(500, new { error = "Internal Server Error", message = ex.Message });
+                Console.WriteLine("🔥 General error: " + ex.Message);
+                return StatusCode(500, new { message = "שגיאת שרת כללית", error = ex.Message });
             }
         }
+
         [HttpPost("RefreshToken")]
         public async Task<IActionResult> RefreshToken([FromBody] RefreshTokenRequestDto dto)
         {
-            var client = await _authService.GetByRefreshTokenAsync(dto.RefreshToken);
-
-            if (client == null || client.RefreshTokenExpiration < DateTime.UtcNow)
-                return Unauthorized("Invalid or expired refresh token");
-
-            var newAccessToken = _jwtService.GenerateToken(client);
-            var newRefreshToken = _jwtService.GenerateRefreshToken();
-
-            client.RefreshToken = newRefreshToken;
-            client.RefreshTokenExpiration = DateTime.UtcNow.AddDays(7);
-            await _authService.UpdateAsync(client);
-
-            return Ok(new
+            try
             {
-                token = newAccessToken,
-                refreshToken = newRefreshToken
-            });
+                var client = await _authService.GetByRefreshTokenAsync(dto.RefreshToken);
+
+                if (client == null || client.RefreshTokenExpiration < DateTime.UtcNow)
+                {
+                    Console.WriteLine("❌ Refresh token invalid or expired");
+                    return Unauthorized(new { message = "טוקן לא חוקי או פג תוקף." });
+                }
+
+                var newAccessToken = _jwtService.GenerateToken(client);
+                var newRefreshToken = _jwtService.GenerateRefreshToken();
+
+                client.RefreshToken = newRefreshToken;
+                client.RefreshTokenExpiration = DateTime.UtcNow.AddDays(7);
+                await _authService.UpdateAsync(client);
+
+                return Ok(new
+                {
+                    token = newAccessToken,
+                    refreshToken = newRefreshToken
+                });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ Error refreshing token: {ex.Message}");
+                return StatusCode(500, new { message = "שגיאה בעת רענון הטוקן", error = ex.Message });
+            }
         }
-
-
     }
 }
