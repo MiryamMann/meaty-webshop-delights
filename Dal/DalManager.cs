@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Bl.Services;
-using Dal.API;
+﻿using Dal.API;
 using Dal.Models;
-using Dal.Services;
 using Dal.models;
+using Dal.Services;
+
 namespace Dal
 {
     public class DalManager:IDalManager
@@ -31,8 +26,8 @@ namespace Dal
             order = new Order();
             orderItem = new OrderItem();
             product = new Product();
-            //ClientService = new DalClientService(_context);
-           // OrderService = new DalOrderService(_context);
+
+            ClientService = new DalClientService(_context);
         }
     }
 }

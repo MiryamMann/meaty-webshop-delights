@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Dal.Migrations
 {
     /// <inheritdoc />
-    public partial class Init : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,12 +17,12 @@ namespace Dal.Migrations
                 {
                     Id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    City = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false, collation: "SQL_Latin1_General_CP1_CI_AS"),
-                    Street = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false, collation: "SQL_Latin1_General_CP1_CI_AS"),
-                    Zip = table.Column<string>(type: "nchar(10)", fixedLength: true, maxLength: 10, nullable: true, collation: "SQL_Latin1_General_CP1_CI_AS"),
-                    BuildingNumber = table.Column<string>(type: "nchar(10)", fixedLength: true, maxLength: 10, nullable: false, collation: "SQL_Latin1_General_CP1_CI_AS"),
-                    ApartmentNumber = table.Column<string>(type: "nchar(10)", fixedLength: true, maxLength: 10, nullable: true, collation: "SQL_Latin1_General_CP1_CI_AS"),
-                    EntryBuilding = table.Column<string>(type: "nchar(10)", fixedLength: true, maxLength: 10, nullable: true, collation: "SQL_Latin1_General_CP1_CI_AS")
+                    City = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false),
+                    Street = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false),
+                    Zip = table.Column<string>(type: "nchar(10)", fixedLength: true, maxLength: 10, nullable: true),
+                    BuildingNumber = table.Column<string>(type: "nchar(10)", fixedLength: true, maxLength: 10, nullable: false),
+                    ApartmentNumber = table.Column<string>(type: "nchar(10)", fixedLength: true, maxLength: 10, nullable: true),
+                    EntryBuilding = table.Column<string>(type: "nchar(10)", fixedLength: true, maxLength: 10, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -34,7 +34,7 @@ namespace Dal.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false),
-                    Name = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false, collation: "SQL_Latin1_General_CP1_CI_AS")
+                    Name = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -45,12 +45,12 @@ namespace Dal.Migrations
                 name: "Client",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nchar(10)", fixedLength: true, maxLength: 10, nullable: false, collation: "SQL_Latin1_General_CP1_CI_AS"),
-                    FirstName = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: true, collation: "SQL_Latin1_General_CP1_CI_AS"),
-                    LastName = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false, collation: "SQL_Latin1_General_CP1_CI_AS"),
+                    Id = table.Column<string>(type: "nchar(10)", fixedLength: true, maxLength: 10, nullable: false),
+                    FirstName = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: true),
+                    LastName = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false),
                     AddressId = table.Column<long>(type: "bigint", nullable: false),
-                    Email = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false, collation: "SQL_Latin1_General_CP1_CI_AS"),
-                    Password = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false, collation: "SQL_Latin1_General_CP1_CI_AS")
+                    Email = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false),
+                    Password = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -62,7 +62,7 @@ namespace Dal.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false),
-                    Name = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false, collation: "SQL_Latin1_General_CP1_CI_AS")
+                    Name = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -74,7 +74,7 @@ namespace Dal.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false),
-                    Description = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false, collation: "SQL_Latin1_General_CP1_CI_AS")
+                    Description = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -87,11 +87,11 @@ namespace Dal.Migrations
                 {
                     Id = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    ClientId = table.Column<string>(type: "nchar(10)", fixedLength: true, maxLength: 10, nullable: false, collation: "SQL_Latin1_General_CP1_CI_AS"),
+                    ClientId = table.Column<string>(type: "nchar(10)", fixedLength: true, maxLength: 10, nullable: false),
                     OrderDate = table.Column<DateTime>(type: "datetime", nullable: false),
                     AddressId = table.Column<long>(type: "bigint", nullable: false),
-                    TotalPrice = table.Column<decimal>(type: "decimal(18,3)", nullable: false),
-                    IsTreated = table.Column<bool>(type: "bit", nullable: false)
+                    StatusId = table.Column<int>(type: "int", nullable: false),
+                    TotalPrice = table.Column<decimal>(type: "decimal(18,3)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -109,9 +109,9 @@ namespace Dal.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false, collation: "SQL_Latin1_General_CP1_CI_AS"),
+                    Name = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: false),
                     PricePerKilo = table.Column<decimal>(type: "decimal(10,2)", nullable: false),
-                    Hechsher = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: true, collation: "SQL_Latin1_General_CP1_CI_AS"),
+                    Hechsher = table.Column<string>(type: "nchar(50)", fixedLength: true, maxLength: 50, nullable: true),
                     CategoryId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -138,6 +138,12 @@ namespace Dal.Migrations
                 {
                     table.PrimaryKey("PK__OrderIte__57ED06819BD31855", x => x.OrderItemId);
                     table.ForeignKey(
+                        name: "FK_OrderItem_Orderes_OrderId",
+                        column: x => x.OrderId,
+                        principalTable: "Orderes",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
                         name: "FK__OrderItem__Produ__6477ECF3",
                         column: x => x.ProductId,
                         principalTable: "Products",
@@ -148,6 +154,11 @@ namespace Dal.Migrations
                 name: "IX_Orderes_AddressId",
                 table: "Orderes",
                 column: "AddressId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderItem_OrderId",
+                table: "OrderItem",
+                column: "OrderId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_OrderItem_ProductId",
@@ -170,19 +181,19 @@ namespace Dal.Migrations
                 name: "Hechsher");
 
             migrationBuilder.DropTable(
-                name: "Orderes");
-
-            migrationBuilder.DropTable(
                 name: "OrderItem");
 
             migrationBuilder.DropTable(
                 name: "Status");
 
             migrationBuilder.DropTable(
-                name: "Address");
+                name: "Orderes");
 
             migrationBuilder.DropTable(
                 name: "Products");
+
+            migrationBuilder.DropTable(
+                name: "Address");
 
             migrationBuilder.DropTable(
                 name: "Category");

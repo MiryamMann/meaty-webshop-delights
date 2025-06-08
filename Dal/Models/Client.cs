@@ -24,3 +24,4 @@ public partial class Client
         public string? GoogleId { get; set; }            // NULLABLE ✅
         public string? PhoneNumber { get; set; }         // NULLABLE ✅
     }
+

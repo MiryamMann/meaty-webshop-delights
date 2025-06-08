@@ -1,4 +1,4 @@
-﻿using Dal.models;
+using Dal.models;
 using System;
 using System.Collections.Generic;
 

@@ -33,6 +33,23 @@ namespace Bl
             }
 
             return blOrder;
+                //OrderItems = dalOrder.OrderItems.Select(ToBlOrderItem).ToList() // Ensure to map OrderItems
+            }
+        
+
+        public static Order ToDalOrder(BlOrder blOrder)
+        {
+            if (blOrder == null) return null;
+            return new Order
+            {
+                Id = blOrder.Id,
+                ClientId = blOrder.ClientId,
+                OrderDate = blOrder.OrderDate,
+                AddressId = blOrder.AddressId,
+                TotalPrice = blOrder.TotalPrice,
+                StatusId = blOrder.StatusId,
+                //OrderItems = blOrder.OrderItems.Select(ToDalOrderItem).ToList() // Ensure to map OrderItems
+            };
         }
 
         public static BlAddress ToBlAddress(Address dalAddress)
@@ -110,25 +127,25 @@ namespace Bl
             return dalProducts?.ConvertAll(ToBlProduct);
         }
 
-        public static Order ToDalOrder(BlOrder blOrder)
-        {
-            if (blOrder == null) return null;
-            var dalOrder= new Order
-            {
-                Id = blOrder.Id,
-                ClientId = blOrder.ClientId,
-                OrderDate = blOrder.OrderDate,
-                AddressId = blOrder.AddressId,
-                TotalPrice = blOrder.TotalPrice,
-                StatusId = blOrder.StatusId,
-                OrderItems = new List<OrderItem>()
-            };
-            foreach (var item in blOrder.OrderItems)
-            {
-               Mapper.ToDalOrder(blOrder).OrderItems.Add(Mapper.ToDalOrderItem(item)); // הנח שיש מתודה הממירה פריט להזמנה
-            }
-            return dalOrder;
-        }
+        //public static Order ToDalOrder(BlOrder blOrder)
+        //{
+        //    if (blOrder == null) return null;
+        //    var dalOrder= new Order
+        //    {
+        //        Id = blOrder.Id,
+        //        ClientId = blOrder.ClientId,
+        //        OrderDate = blOrder.OrderDate,
+        //        AddressId = blOrder.AddressId,
+        //        TotalPrice = blOrder.TotalPrice,
+        //        StatusId = blOrder.StatusId,
+        //        OrderItems = new List<OrderItem>()
+        //    };
+        //    foreach (var item in blOrder.OrderItems)
+        //    {
+        //       Mapper.ToDalOrder(blOrder).OrderItems.Add(Mapper.ToDalOrderItem(item)); // הנח שיש מתודה הממירה פריט להזמנה
+        //    }
+        //    return dalOrder;
+        //}
 
         public static Product ToDalProduct(BlProduct blProduct)
         {

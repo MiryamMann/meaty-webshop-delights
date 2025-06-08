@@ -15,7 +15,6 @@ public partial class Order
     public long AddressId { get; set; }
     public int StatusId {  get; set; }
     public decimal TotalPrice { get; set; }
-    public Address? Address { get; set; }  // Navigation Property - הוספה של קשר לכתובת
-
+    public Address? Address { get; set; }   
     public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 }

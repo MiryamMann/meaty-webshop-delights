@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Dal.API;
+﻿using Dal.API;
 using Dal.Models;
 using Dal.Services;
 using Dal.models;
-
+using Bl.API;
 
 namespace Dal
 {
