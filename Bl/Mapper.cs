@@ -224,15 +224,14 @@ namespace Bl
                 ProductId = blOrderItem.ProductId
             };
         }
-        
+
         public static Client ToDalClient(BlClient blClient)
         {
             if (blClient == null)
                 return null;
 
-            return new Client
+            var client = new Client
             {
-                Id = blClient.Id,
                 Email = blClient.Email,
                 FirstName = blClient.FirstName,
                 LastName = blClient.LastName,
@@ -242,10 +241,18 @@ namespace Bl
                 RefreshToken = blClient.RefreshToken,
                 RefreshTokenExpiry = blClient.RefreshTokenExpiry
             };
+
+            // רק אם זה אובייקט קיים (Id > 0), נציב את ה־Id
+            if (blClient.Id > 0)
+                client.Id = blClient.Id;
+
+            return client;
         }
 
 
+
     }
+
 
 
 }

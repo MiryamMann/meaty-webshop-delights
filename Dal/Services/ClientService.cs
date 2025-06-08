@@ -17,10 +17,31 @@ namespace Dal.Services
         {
             return await _context.Clients.AnyAsync(c => c.Email == email);
         }
-
+        public async Task<Client?> GetByRefreshTokenAsync(string refreshToken)
+        {
+            return await _context.Clients
+                .FirstOrDefaultAsync(c => c.RefreshToken == refreshToken);
+        }
         public async Task<Client?> GetByEmailAndPasswordAsync(string email, string password)
         {
             return await _context.Clients.FirstOrDefaultAsync(c => c.Email == email && c.Password == password);
+        }
+        public async Task UpdateAsync(Client client)
+        {
+            var trackedEntity = await _context.Clients.FirstOrDefaultAsync(c => c.Id == client.Id);
+
+            if (trackedEntity != null)
+            {
+                // מעדכנים ידנית רק את השדות שצריך
+                _context.Entry(trackedEntity).CurrentValues.SetValues(client);
+            }
+            else
+            {
+                // אם לא עוקב – אפשר לצרף
+                _context.Clients.Update(client);
+            }
+
+            await _context.SaveChangesAsync();
         }
 
         public Client ClientExist(string clientId)
@@ -63,11 +84,6 @@ namespace Dal.Services
             return _context.Clients.FirstOrDefault(c => c.Email == email);
         }
 
-        public async Task UpdateAsync(Client client)
-        {
-            _context.Clients.Update(client);
-            await _context.SaveChangesAsync();
-        }
 
         public async Task<bool> IsEmailExistsAsync(string email)
         {

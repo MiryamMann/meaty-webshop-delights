@@ -20,7 +20,6 @@ namespace Bl.Services
 
         public string GenerateToken(BlClient client)
         {
-            // הגנות על ערכים שיכולים להיות null
             var nameIdentifier = client.Id.ToString();
             var email = client.Email ?? string.Empty;
             var firstName = client.FirstName ?? string.Empty;

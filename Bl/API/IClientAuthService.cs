@@ -8,4 +8,7 @@ public interface IClientAuthService
     Task<BlClient?> SignUpAsync(ClientSignUpDto dto);
     Task<bool> ExistsByEmailAsync(string email);
     Task<LoginResponseDto?> LoginWithGoogleTokenAsync(string idToken);
+    Task<BlClient?> GetByRefreshTokenAsync(string refreshToken);
+    Task UpdateAsync(BlClient client);
+
 }

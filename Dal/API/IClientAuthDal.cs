@@ -8,5 +8,7 @@ public interface IClientAuthDal
     Task<bool> ExistsByEmailAsync(string email);
     Task<Client?> GetByEmailAndPasswordAsync(string email, string password);
     Task UpdateAsync(Client client);
+    Task<Client?> GetByRefreshTokenAsync(string refreshToken);
+
 
 }

@@ -15,12 +15,40 @@ namespace Bl.Services
         private readonly IClientDal _dal;
         private readonly IClientAuthDal _authDal;
         private readonly IJwtService _jwt;
-
         public ClientAuthService(IClientDal dal, IJwtService jwt, IClientAuthDal authDal)
         {
             _dal = dal;
             _jwt = jwt;
             _authDal = authDal;
+        }
+        public async Task<BlClient?> GetByRefreshTokenAsync(string refreshToken)
+        {
+            var client = await _authDal.GetByRefreshTokenAsync(refreshToken);
+            if (client == null)
+                return null;
+
+            return Mapper.ToBlClient(client);
+        }
+        public async Task UpdateAsync(BlClient client)
+        {
+            try
+            {
+                var dalClient = Mapper.ToDalClient(client);
+                await _authDal.UpdateAsync(dalClient);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("❌ שגיאה בעדכון לקוח:");
+                Console.WriteLine(ex.Message);
+
+                if (ex.InnerException != null)
+                {
+                    Console.WriteLine("➡ Inner exception:");
+                    Console.WriteLine(ex.InnerException.Message);
+                }
+
+                throw; // תזרקי שוב אם את רוצה לראות אותה גם בקונסולה הראשית
+            }
         }
 
         public async Task<BlClient?> SignUpAsync(ClientSignUpDto dto)
@@ -43,7 +71,8 @@ namespace Bl.Services
             var client = Mapper.ToDalClient(dto, (int)address.Id);
             client.Password = new PasswordHasher<Client>().HashPassword(client, dto.Password);
 
-            return await _authDal.SignUpAsync(client);
+            var savedClient = await _authDal.SignUpAsync(client);
+            return Mapper.ToBlClient(savedClient);
         }
 
         public async Task<BlClient?> LoginAsync(ClientLoginDto dto)
@@ -82,44 +111,49 @@ namespace Bl.Services
         {
             var payload = await GoogleJsonWebSignature.ValidateAsync(idToken);
 
+            // בדיקה אם קיים לקוח במסד לפי האימייל
             var dalClient = _dal.GetClientByEmail(payload.Email);
 
             if (dalClient == null)
             {
-                // יצירת משתמש חדש עם מזהה גוגל
+                // לקוח חדש
                 dalClient = new Client
                 {
                     Email = payload.Email,
                     FirstName = payload.Name,
-                    GoogleId = payload.Subject
+                    GoogleId = payload.Subject,
+                    RefreshToken = _jwt.GenerateRefreshToken(),
+                    RefreshTokenExpiry = DateTime.UtcNow.AddDays(7)
                 };
 
-                // הוספה למסד הנתונים
+                // הוספה למסד
                 await _authDal.SignUpAsync(dalClient);
             }
-            else if (dalClient.GoogleId == null)
+            else
             {
-                // משתמש קיים אבל אין לו GoogleId – נעדכן אותו
-                dalClient.GoogleId = payload.Subject;
+                // לקוח קיים – נעדכן את GoogleId אם חסר
+                if (string.IsNullOrEmpty(dalClient.GoogleId))
+                {
+                    dalClient.GoogleId = payload.Subject;
+                }
+
+                // תמיד נעדכן טוקנים
+                dalClient.RefreshToken = _jwt.GenerateRefreshToken();
+                dalClient.RefreshTokenExpiry = DateTime.UtcNow.AddDays(7);
+
                 await _authDal.UpdateAsync(dalClient);
             }
-            Console.WriteLine($"Saving client: Email={dalClient.Email}, GoogleId={dalClient.GoogleId}");
 
-            // יצירת טוקנים
+            // יצירת BlClient והחזרת טוקנים
             var blClient = Mapper.ToBlClient(dalClient);
             var accessToken = _jwt.GenerateToken(blClient);
-            var refreshToken = _jwt.GenerateRefreshToken();
-
-            // עדכון טוקן במסד
-            dalClient.RefreshToken = refreshToken;
-            dalClient.RefreshTokenExpiry = DateTime.UtcNow.AddDays(7);
-            await _authDal.UpdateAsync(dalClient);
 
             return new LoginResponseDto
             {
                 AccessToken = accessToken,
-                RefreshToken = refreshToken
+                RefreshToken = dalClient.RefreshToken
             };
         }
+
     }
 }

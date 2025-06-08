@@ -1,1 +1,15 @@
--e "bin/\nobj/\n.vs/\n*.dll\n*.pdb\n*.suo\n*.user\n*.cache\n*.log" 
+
+# Build artifacts
+bin
+obj
+.dll
+.pdb
+
+# VS local files
+.vs
+.user
+.suo
+
+# Others
+.cache
+.log

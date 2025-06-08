@@ -36,8 +36,7 @@ namespace web_api.Controllers
             {
                 Console.WriteLine($" Received login attempt for email: {dto.Email}");
 
-                // הפונקציה ב־BL אמורה לבדוק אימייל + סיסמה
-                var blClient = await _authService.LoginAsync(dto); // נחזיר מפה את BlClient ולא רק את הדוא"ל
+                var blClient = await _authService.LoginAsync(dto); 
 
                 if (blClient == null)
                 {
@@ -49,6 +48,10 @@ namespace web_api.Controllers
                 var refreshToken = _jwtService.GenerateRefreshToken();
                 Console.WriteLine(blClient.Id);
                 Console.WriteLine(blClient.AddressId);
+                blClient.RefreshTokenExpiration = DateTime.UtcNow.AddDays(7);
+                blClient.RefreshToken = refreshToken;
+                blClient.RefreshTokenExpiration = DateTime.UtcNow.AddDays(7); // תוקף לשבוע
+                await _authService.UpdateAsync(blClient);
 
                 return Ok(new
                 {
@@ -83,6 +86,7 @@ namespace web_api.Controllers
             Console.WriteLine($" Signup succeeded for email: {dto.Email}");
             return Ok(client);
         }
+
         [HttpPost("Google")]
         public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginDto dto)
         {
@@ -113,6 +117,28 @@ namespace web_api.Controllers
                 return StatusCode(500, new { error = "Internal Server Error", message = ex.Message });
             }
         }
+        [HttpPost("RefreshToken")]
+        public async Task<IActionResult> RefreshToken([FromBody] RefreshTokenRequestDto dto)
+        {
+            var client = await _authService.GetByRefreshTokenAsync(dto.RefreshToken);
+
+            if (client == null || client.RefreshTokenExpiration < DateTime.UtcNow)
+                return Unauthorized("Invalid or expired refresh token");
+
+            var newAccessToken = _jwtService.GenerateToken(client);
+            var newRefreshToken = _jwtService.GenerateRefreshToken();
+
+            client.RefreshToken = newRefreshToken;
+            client.RefreshTokenExpiration = DateTime.UtcNow.AddDays(7);
+            await _authService.UpdateAsync(client);
+
+            return Ok(new
+            {
+                token = newAccessToken,
+                refreshToken = newRefreshToken
+            });
+        }
+
 
     }
 }
