@@ -76,3 +76,16 @@ C:\Users\This User\Documents\limodim\Hacker\Server\Dal\obj\Debug\net8.0\Dal.dll
 C:\Users\This User\Documents\limodim\Hacker\Server\Dal\obj\Debug\net8.0\refint\Dal.dll
 C:\Users\This User\Documents\limodim\Hacker\Server\Dal\obj\Debug\net8.0\Dal.pdb
 C:\Users\This User\Documents\limodim\Hacker\Server\Dal\obj\Debug\net8.0\ref\Dal.dll
+D:\tamar\fullstak\Full_Stack_Haker_Web\project miri\server\Full_Stack_Haker_Web\Dal\bin\Debug\net8.0\Dal.deps.json
+D:\tamar\fullstak\Full_Stack_Haker_Web\project miri\server\Full_Stack_Haker_Web\Dal\bin\Debug\net8.0\Dal.dll
+D:\tamar\fullstak\Full_Stack_Haker_Web\project miri\server\Full_Stack_Haker_Web\Dal\bin\Debug\net8.0\Dal.pdb
+D:\tamar\fullstak\Full_Stack_Haker_Web\project miri\server\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.csproj.AssemblyReference.cache
+D:\tamar\fullstak\Full_Stack_Haker_Web\project miri\server\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.GeneratedMSBuildEditorConfig.editorconfig
+D:\tamar\fullstak\Full_Stack_Haker_Web\project miri\server\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.AssemblyInfoInputs.cache
+D:\tamar\fullstak\Full_Stack_Haker_Web\project miri\server\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.AssemblyInfo.cs
+D:\tamar\fullstak\Full_Stack_Haker_Web\project miri\server\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.csproj.CoreCompileInputs.cache
+D:\tamar\fullstak\Full_Stack_Haker_Web\project miri\server\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.sourcelink.json
+D:\tamar\fullstak\Full_Stack_Haker_Web\project miri\server\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.dll
+D:\tamar\fullstak\Full_Stack_Haker_Web\project miri\server\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\refint\Dal.dll
+D:\tamar\fullstak\Full_Stack_Haker_Web\project miri\server\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\Dal.pdb
+D:\tamar\fullstak\Full_Stack_Haker_Web\project miri\server\Full_Stack_Haker_Web\Dal\obj\Debug\net8.0\ref\Dal.dll
