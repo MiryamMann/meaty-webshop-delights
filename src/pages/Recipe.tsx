@@ -41,15 +41,15 @@ const Recipe = () => {
   return (
     <>
       <Navbar />
-      <main className="container py-10 max-w-2xl mx-auto">
-        <h1 className="text-2xl font-bold mb-2">{recipe.title}</h1>
-        <div className="mb-2 text-muted-foreground">{recipe.description}</div>
-        <ol className="list-decimal pl-6 mb-6 space-y-1">
+      <main className="container py-10 max-w-2xl mx-auto animate-fade-in min-h-[60vh]">
+        <h1 className="text-3xl font-bold mb-3 text-burgundy font-playfair">{recipe.title}</h1>
+        <div className="mb-4 text-wood text-lg font-playfair">{recipe.description}</div>
+        <ol className="list-decimal pl-6 mb-8 space-y-2 font-playfair text-wood">
           {(recipe.steps || []).map((step, idx) => (
             <li key={idx}>{step}</li>
           ))}
         </ol>
-        <Link to="/recipes" className="text-primary underline">Back to all recipes</Link>
+        <Link to="/recipes" className="text-burgundy underline font-semibold font-playfair hover:text-wood transition">Back to all recipes</Link>
       </main>
     </>
   );

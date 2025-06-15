@@ -5,12 +5,14 @@ import { Link } from "react-router-dom";
 const Cart = () => (
   <>
     <Navbar />
-    <main className="container py-10 max-w-2xl mx-auto">
-      <h1 className="text-2xl font-bold mb-6">Your Cart</h1>
-      <p className="text-muted-foreground">Your cart is currently empty.</p>
-      <div className="mt-6 flex gap-4">
-        <Link to="/products" className="text-primary underline">Continue Shopping</Link>
-        <Link to="/payment" className="bg-primary text-primary-foreground px-4 py-2 rounded font-semibold shadow hover:bg-primary/90 transition">
+    <main className="container py-12 max-w-2xl mx-auto animate-fade-in min-h-[60vh]">
+      <h1 className="text-3xl font-bold mb-8 text-burgundy font-playfair">Your Cart</h1>
+      <p className="text-lg text-wood mb-8 font-playfair">Your cart is currently empty.</p>
+      <div className="mt-6 flex gap-6">
+        <Link to="/products" className="text-burgundy underline font-semibold font-playfair hover:text-wood transition">
+          Continue Shopping
+        </Link>
+        <Link to="/payment" className="bg-wood text-black px-6 py-3 rounded-lg font-semibold font-playfair shadow hover:bg-burgundy hover:text-white transition-all duration-200 hover:scale-105">
           Proceed to Payment
         </Link>
       </div>
