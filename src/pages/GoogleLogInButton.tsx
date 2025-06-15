@@ -32,7 +32,6 @@ function GoogleLoginButton() {
 
       console.log("✅ Google login success:", data);
 
-      // שמירה ל־userSlice (token וכו') – רק אם קיבלת
       if (data.token && data.refreshToken) {
         dispatch(setClient({
           token: data.token,
@@ -42,7 +41,6 @@ function GoogleLoginButton() {
         }));
       }
 
-      // שמירה ל־clientSlice לפי מה שהשרת מחזיר
       const client = data.client || data;
       console.log("👤 dispatching client fields...", client);
       dispatch(setClientField({ field: "clientId", value: client.id }));
@@ -58,8 +56,7 @@ function GoogleLoginButton() {
         dispatch(setAddressField({ field: "buildingNumber", value: client.address.buildingNumber || "" }));
       }
 
-      // ניתוב קדימה
-      navigate("/AccountArea");
+      navigate("/PersonalArea");
 
     } catch (err) {
       console.error("🔥 Error during Google login:", err);
