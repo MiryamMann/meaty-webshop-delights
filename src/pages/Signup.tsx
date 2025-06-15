@@ -1,76 +1,92 @@
+// src/pages/Signup.tsx
 
-import Navbar from "@/components/Navbar";
+import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setClientField, setAddressField } from "../redux/clientSlice";
+import GoogleLoginButton from "./GoogleLogInButton";
 import { Link } from "react-router-dom";
+import { ClientPrimitiveKeys } from "../redux/clientSlice";
+import type { AddressKeys } from "../redux/clientSlice";
 
-const Signup = () => (
-  <>
-    <Navbar />
+
+const Signup = () => {
+  const dispatch = useDispatch();
+  const [isSuccess, setIsSuccess] = useState(false);
+  const client = useSelector((state: any) => state.client.client);
+
+const handleChange = (field: ClientPrimitiveKeys) => (e: React.ChangeEvent<HTMLInputElement>) => {
+  dispatch(setClientField({ field, value: e.target.value }));
+};
+
+const handleAddressChange = (field: AddressKeys) => (e: React.ChangeEvent<HTMLInputElement>) => {
+  dispatch(setAddressField({ field, value: e.target.value }));
+};
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("https://localhost:7172/api/auth/SignUp", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(client),
+      });
+
+      if (res.ok) {
+        setIsSuccess(true);
+      } else {
+        const err = await res.json();
+        alert(err.message || "הרשמה נכשלה");
+      }
+    } catch (error) {
+      console.error("שגיאה בשליחה לשרת:", error);
+      alert("שגיאה בלתי צפויה התרחשה");
+    }
+  };
+
+  if (isSuccess) {
+    return (
+      <main className="container py-20 min-h-[60vh] flex items-center justify-center">
+        <h1 className="text-3xl font-bold text-green-600 font-playfair">ההרשמה הצליחה!</h1>
+      </main>
+    );
+  }
+
+  return (
     <main className="container py-12 min-h-[60vh] flex flex-col items-center justify-center animate-fade-in">
       <div className="bg-card border border-wood rounded-2xl shadow-2xl max-w-md w-full p-8 space-y-6">
-        <h1 className="text-3xl font-bold text-burgundy text-center font-playfair mb-4">Sign Up</h1>
-        <form className="space-y-5">
-          <div>
-            <label className="block text-wood font-playfair mb-1" htmlFor="email">Email</label>
-            <input
-              id="email"
-              type="email"
-              placeholder="you@example.com"
-              className="w-full border border-wood/40 rounded-lg p-3 bg-background text-wood font-playfair focus:outline-none focus:ring-2 focus:ring-burgundy ring-offset-2 transition"
-              autoComplete="email"
-              required
-            />
-          </div>
-          <div>
-            <label className="block text-wood font-playfair mb-1" htmlFor="password">Password</label>
-            <input
-              id="password"
-              type="password"
-              placeholder="Create a password"
-              className="w-full border border-wood/40 rounded-lg p-3 bg-background text-wood font-playfair focus:outline-none focus:ring-2 focus:ring-burgundy ring-offset-2 transition"
-              autoComplete="new-password"
-              required
-            />
-          </div>
-          <button
-            className="w-full bg-burgundy hover:bg-black text-white font-semibold rounded-lg py-3 shadow-lg transition-all duration-150 hover:scale-105 font-playfair tracking-wider text-lg"
-            type="submit"
-            disabled
-            title="Plug in your backend to enable signup"
-          >
-            Sign Up
-          </button>
+        <h1 className="text-3xl font-bold text-burgundy text-center font-playfair mb-4">הרשמה</h1>
+        <form className="space-y-5" onSubmit={handleSubmit}>
+          <input placeholder="שם פרטי" value={client.firstName} onChange={handleChange("firstName")} className="w-full border border-wood rounded-lg p-3" />
+          <input placeholder="שם משפחה" value={client.lastName} onChange={handleChange("lastName")} className="w-full border border-wood rounded-lg p-3" />
+          <input placeholder="אימייל" type="email" value={client.email} onChange={handleChange("email")} className="w-full border border-wood rounded-lg p-3" />
+          <input placeholder="סיסמה" type="password" value={client.password} onChange={handleChange("password")} className="w-full border border-wood rounded-lg p-3" />
+          <input placeholder="רחוב" value={client.address.street} onChange={handleAddressChange("street")} className="w-full border border-wood rounded-lg p-3" />
+          <input placeholder="עיר" value={client.address.city} onChange={handleAddressChange("city")} className="w-full border border-wood rounded-lg p-3" />
+          <input placeholder="מיקוד" value={client.address.zipCode} onChange={handleAddressChange("zipCode")} className="w-full border border-wood rounded-lg p-3" />
+          <input placeholder="מספר בניין" value={client.address.buildingNumber} onChange={handleAddressChange("buildingNumber")} className="w-full border border-wood rounded-lg p-3" />
+          <button type="submit" className="w-full bg-burgundy text-white rounded-lg py-3 hover:bg-black transition-all duration-150">הרשמה</button>
         </form>
+
         <div className="flex items-center my-4">
           <div className="flex-grow border-t border-wood" />
-          <span className="mx-3 text-wood font-playfair text-sm">or</span>
+          <span className="mx-3 text-wood font-playfair text-sm">או</span>
           <div className="flex-grow border-t border-wood" />
         </div>
-        <button
-          className="w-full flex items-center justify-center gap-2 bg-wood text-black font-semibold rounded-lg py-3 shadow hover:bg-burgundy hover:text-white transition-all duration-150 hover:scale-105 font-playfair"
-          type="button"
-          disabled
-          title="Connect Google OAuth on backend"
-        >
-          <svg width="20" height="20" viewBox="0 0 48 48" fill="none">
-            <g>
-              <path d="M44.5,20H24v8.5h11.6 c-1.6,4.5-5.9,7.5-11.6,7.5c-7.1,0-12.8-5.8-12.8-12.9c0-7.1,5.7-12.9,12.8-12.9 c3,0,5.6,1,7.7,2.7l6.4-6.3C36.3,6.5,30.6,4,24,4C12.9,4,4,12.9,4,24c0,11.1,8.9,20,20,20c11.1,0,19.8-8.7,19.8-19.8 c0-1.3-0.1-2.2-0.3-3.2H44.5z" fill="#FFC107"/>
-              <path d="M6.3,14.6l7,5.1C15.5,16.7,19.4,14,24,14c3,0,5.6,1,7.7,2.7l6.4-6.3C36.3,6.5,30.6,4,24,4 c-7,0-12.9,3.1-16.7,8.1L6.3,14.6z" fill="#FF3D00"/>
-              <path d="M24,44c6.4,0,11.6-2.1,15.5-5.7l-7.1-5.8c-2.1,1.4-4.7,2.2-8.4,2.2c-5.7,0-10.5-3-11.8-7.4l-7,5.1
-                C7,39.8,14.8,44,24,44z" fill="#4CAF50"/>
-              <path d="M44.5,20H24v8.5h11.6c-0.6,1.8-1.7,3.3-3.1,4.6c0,0,0,0,0,0l7.1,5.8C42.1,40.2,44.5,32.5,44.5,20z" fill="#1976D2"/>
-            </g>
-          </svg>
-          Sign up with Google
-        </button>
+
+        <GoogleLoginButton />
+
         <p className="text-center text-wood mt-4">
-          Already have an account?{" "}
+          כבר רשום?{" "}
           <Link to="/login" className="text-burgundy font-semibold hover:underline">
-            Sign In
+            התחברות
           </Link>
         </p>
       </div>
     </main>
-  </>
-);
+  );
+};
 
 export default Signup;

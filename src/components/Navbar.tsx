@@ -26,6 +26,9 @@ const Navbar = () => (
         <Link to="/personal" className="hover:text-primary transition-colors duration-200">
           Personal Area
         </Link>
+        <Link to="/Login" className="hover:text-primary transition-colors duration-200">
+          Log in
+        </Link>
         <DarkModeToggle />
       </div>
     </div>

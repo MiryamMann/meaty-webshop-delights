@@ -1,7 +1,6 @@
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -27,7 +26,6 @@ const AdminLogin = () => {
 
   return (
     <>
-      <Navbar />
       <main className="container flex flex-col items-center justify-center min-h-[70vh]">
         <form
           onSubmit={handleSubmit}

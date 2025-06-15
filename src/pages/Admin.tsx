@@ -1,7 +1,6 @@
 
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -73,7 +72,6 @@ const Admin = () => {
 
   return (
     <>
-      <Navbar />
       <main className="container mt-24 mb-14 max-w-3xl mx-auto">
         <h1 className="text-3xl font-bold text-burgundy mb-10 font-playfair">Admin Dashboard</h1>
 

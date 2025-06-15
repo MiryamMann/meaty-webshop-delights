@@ -1,5 +1,4 @@
 
-import Navbar from "@/components/Navbar";
 import { useParams, Link } from "react-router-dom";
 
 const recipeDetails = {
@@ -40,8 +39,7 @@ const Recipe = () => {
   const recipe = recipeDetails[id ?? ""] || { title: "Recipe not found", description: "", steps: [] };
   return (
     <>
-      <Navbar />
-      <main className="container py-10 max-w-2xl mx-auto animate-fade-in min-h-[60vh]">
+[]      <main className="container py-10 max-w-2xl mx-auto animate-fade-in min-h-[60vh]">
         <h1 className="text-3xl font-bold mb-3 text-burgundy font-playfair">{recipe.title}</h1>
         <div className="mb-4 text-wood text-lg font-playfair">{recipe.description}</div>
         <ol className="list-decimal pl-6 mb-8 space-y-2 font-playfair text-wood">

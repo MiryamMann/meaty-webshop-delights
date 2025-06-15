@@ -1,33 +1,24 @@
+// src/redux/store.ts
 
 import { configureStore } from '@reduxjs/toolkit';
 import cartReducer from './cartSlice';
+import clientReducer from './clientSlice';
 import filterReducer from './filterSlice';
-import userReducer from './userSlice';
-import customerReducer from './customerSlice';
 import orderReducer from './orderSlice';
 import paymentReducer from './paymentSlice';
 import productsReducer from './productsSlice';
+import userReducer from './userSlice';
 
 export const store = configureStore({
   reducer: {
     cart: cartReducer,
+    client: clientReducer,
     filter: filterReducer,
-    user: userReducer,
-    customer: customerReducer,
     order: orderReducer,
     payment: paymentReducer,
     products: productsReducer,
+    user: userReducer,
   },
-});
-
-// Persist state to localStorage
-store.subscribe(() => {
-  try {
-    const state = store.getState();
-    localStorage.setItem("reduxState", JSON.stringify(state));
-  } catch (e) {
-    console.warn("Failed to persist Redux state", e);
-  }
 });
 
 export type RootState = ReturnType<typeof store.getState>;

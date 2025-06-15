@@ -1,5 +1,4 @@
 
-import Navbar from "@/components/Navbar";
 import SectionDivider from "@/components/SectionDivider";
 
 const heroImg =
@@ -7,7 +6,6 @@ const heroImg =
 
 const Home = () => (
   <>
-    <Navbar />
     <main className="container min-h-[90vh] flex flex-col justify-center items-center">
       {/* Hero Section */}
       <div className="relative w-full max-w-3xl mx-auto mt-28 mb-14 rounded-xl shadow-2xl overflow-hidden">

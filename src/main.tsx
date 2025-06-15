@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 import { Provider } from 'react-redux';
-import { store } from './store';
+import { store } from './redux/index.ts';
 
 // Load persisted state from localStorage
 const persisted = localStorage.getItem('reduxState');

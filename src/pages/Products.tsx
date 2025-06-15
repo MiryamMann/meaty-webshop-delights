@@ -1,10 +1,9 @@
 
-import Navbar from "@/components/Navbar";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchDataAsyncAction } from "@/store/productsSlice";
-import type { RootState } from "@/store";
+import { fetchDataAsyncAction } from "@/redux/productsSlice";
+import type { RootState } from "@/redux";
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -16,7 +15,6 @@ const Products = () => {
 
   return (
     <>
-      <Navbar />
       <main className="container py-12 min-h-[70vh] animate-fade-in">
         <h1 className="text-3xl font-bold mb-8 text-burgundy font-playfair drop-shadow">All Meat Products</h1>
         {loading && <div>Loading products...</div>}

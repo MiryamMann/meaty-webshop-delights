@@ -1,5 +1,4 @@
 
-import Navbar from "@/components/Navbar";
 import { Link } from "react-router-dom";
 
 const recipes = [
@@ -10,7 +9,6 @@ const recipes = [
 
 const Recipes = () => (
   <>
-    <Navbar />
     <main className="container py-12 animate-fade-in">
       <h1 className="text-3xl font-bold mb-8 text-burgundy font-playfair">Meat Recipes</h1>
       <ul className="space-y-6">
