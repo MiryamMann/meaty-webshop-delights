@@ -9,6 +9,8 @@ const navLinks = [
   { name: "Cart", path: "/cart", icon: ShoppingCart },
   { name: "Personal Area", path: "/personal", icon: User },
   { name: "Recipes", path: "/recipes", icon: FileText },
+  { name: "Login", path: "/login", icon: User },
+  { name: "Sign Up", path: "/signup", icon: User },
 ];
 
 const Navbar = () => {
