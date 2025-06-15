@@ -16,6 +16,9 @@ import Recipes from "./pages/Recipes";
 import Recipe from "./pages/Recipe";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Admin from "./pages/Admin";
+import AdminLogin from "./pages/AdminLogin";
+import ResetPassword from "./pages/ResetPassword";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +40,9 @@ const App = () => (
           <Route path="/recipes/:id" element={<Recipe />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin-login" element={<AdminLogin />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,7 +1,8 @@
 
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ShoppingCart, Home, FileText } from "lucide-react";
 import { cn } from "@/lib/utils";
+import React from "react";
 
 const navLinks = [
   { name: "Home", path: "/", icon: Home },
@@ -12,6 +13,14 @@ const navLinks = [
 
 const Navbar = () => {
   const { pathname } = useLocation();
+  const navigate = useNavigate();
+  const isAdmin = localStorage.getItem("isAdmin") === "true";
+
+  function handleLogout() {
+    localStorage.removeItem("isAdmin");
+    navigate("/");
+  }
+
   return (
     <nav
       className={cn(
@@ -52,22 +61,82 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          {/* Admin and Reset Password Links */}
+          {isAdmin ? (
+            <li>
+              <Link
+                to="/admin"
+                className={cn(
+                  "flex items-center gap-2 px-3 py-2 rounded-md font-semibold text-burgundy border-burgundy border-b-2 bg-white/20 shadow"
+                )}
+                style={{
+                  fontFamily: `'Playfair Display', serif`,
+                  fontWeight: 700,
+                  letterSpacing: ".05em",
+                }}
+              >
+                Admin
+              </Link>
+            </li>
+          ) : (
+            <li>
+              <Link
+                to="/admin-login"
+                className={cn(
+                  "flex items-center gap-2 px-3 py-2 rounded-md font-semibold text-wood hover:bg-white/10"
+                )}
+                style={{
+                  fontFamily: `'Playfair Display', serif`,
+                  fontWeight: 700,
+                  letterSpacing: ".04em",
+                }}
+              >
+                Admin Login
+              </Link>
+            </li>
+          )}
+          <li>
+            <Link
+              to="/reset-password"
+              className={cn(
+                "flex items-center gap-2 px-3 py-2 rounded-md font-semibold text-xs text-white/80 hover:bg-white/5"
+              )}
+              style={{
+                fontFamily: `'Playfair Display', serif`,
+                letterSpacing: ".04em",
+              }}
+            >
+              Reset Password
+            </Link>
+          </li>
         </ul>
         <div className="flex gap-2 sm:gap-4 items-center">
-          <Link
-            to="/login"
-            className="border border-burgundy text-burgundy font-semibold uppercase text-xs px-5 py-2 rounded-[10px] bg-white/10 transition-all hover:bg-burgundy hover:text-white shadow"
-            style={{ fontFamily: "'Playfair Display', serif", letterSpacing: "0.08em" }}
-          >
-            Log In
-          </Link>
-          <Link
-            to="/signup"
-            className="border border-burgundy text-white bg-burgundy font-semibold uppercase text-xs px-5 py-2 rounded-[10px] transition-all hover:bg-black hover:text-wood shadow"
-            style={{ fontFamily: "'Playfair Display', serif", letterSpacing: "0.08em" }}
-          >
-            Sign Up
-          </Link>
+          {isAdmin ? (
+            <button
+              onClick={handleLogout}
+              className="border border-burgundy text-burgundy font-semibold uppercase text-xs px-5 py-2 rounded-[10px] bg-white/10 transition-all hover:bg-burgundy hover:text-white shadow"
+              style={{ fontFamily: "'Playfair Display', serif", letterSpacing: "0.08em" }}
+            >
+              Log Out
+            </button>
+          ) : (
+            <>
+              <Link
+                to="/login"
+                className="border border-burgundy text-burgundy font-semibold uppercase text-xs px-5 py-2 rounded-[10px] bg-white/10 transition-all hover:bg-burgundy hover:text-white shadow"
+                style={{ fontFamily: "'Playfair Display', serif", letterSpacing: "0.08em" }}
+              >
+                Log In
+              </Link>
+              <Link
+                to="/signup"
+                className="border border-burgundy text-white bg-burgundy font-semibold uppercase text-xs px-5 py-2 rounded-[10px] transition-all hover:bg-black hover:text-wood shadow"
+                style={{ fontFamily: "'Playfair Display', serif", letterSpacing: "0.08em" }}
+              >
+                Sign Up
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </nav>
