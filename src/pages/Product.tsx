@@ -1,6 +1,6 @@
-
 import Navbar from "@/components/Navbar";
 import { useParams, Link } from "react-router-dom";
+import ProductReviews from "@/components/ProductReviews";
 
 const productDetails = {
   "1": { name: "Ribeye Steak", price: 29.99, description: "Tender, juicy ribeye steak, perfect for grilling." },
@@ -25,6 +25,7 @@ const Product = () => {
         <button className="bg-burgundy text-white px-8 py-3 rounded-lg font-semibold shadow hover:bg-black hover:text-wood transition-all duration-300 mb-8 animate-scale-in">
           Add to Cart
         </button>
+        <ProductReviews productId={id ?? "unknown"} />
         <div>
           <Link to="/products" className="text-wood underline hover:text-burgundy transition">Back to all products</Link>
         </div>
