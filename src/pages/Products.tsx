@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -33,8 +32,6 @@ const Products = () => {
   // Filtering logic
   const filteredItems = selectedCategory
     ? items.filter((product: any) => {
-        // Matching logic: expects product.category to match category label exactly.
-        // Handles missing category property gracefully and ignores case.
         const prodCat = (product.category || "").toLowerCase();
         const selCat = (selectedCategory || "").toLowerCase();
         return prodCat === selCat;
@@ -52,14 +49,14 @@ const Products = () => {
         <div className="w-full max-w-xs">
           <label className="block text-sm font-semibold text-burgundy mb-2 font-playfair">Filter by Category</label>
           <Select
-            value={selectedCategory || ""}
+            value={selectedCategory ?? "All"}
             onValueChange={handleCategoryChange}
           >
             <SelectTrigger>
               <SelectValue placeholder="Choose category..." />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">All</SelectItem>
+              <SelectItem value="All">All</SelectItem>
               {CATEGORIES.map((cat) => (
                 <SelectItem key={cat} value={cat}>{cat}</SelectItem>
               ))}
@@ -67,7 +64,6 @@ const Products = () => {
           </Select>
         </div>
       </div>
-
       {loading && <div>Loading products...</div>}
       {error && <div className="text-red-500">{error}</div>}
 
@@ -106,4 +102,3 @@ const Products = () => {
 };
 
 export default Products;
-
