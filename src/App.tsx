@@ -25,6 +25,7 @@ import AdminLogin from "./pages/AdminLogin";
 import ResetPassword from "./pages/ResetPassword";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import BotManagement from "./pages/BotManagement";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +49,10 @@ const App = () => (
                 <Route path="/recipes" element={<Recipes />} />
                 <Route path="/recipes/:id" element={<Recipe />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/Home" element={<Home />} />
+                <Route path="/BotManagement" element={<BotManagement />} />
+
+
               </Route>
               {/* דפים בלי Navbar */}
               <Route path="/login" element={<Login />} />

@@ -49,7 +49,7 @@ const Login = () => {
         dispatch(clearRedirectTarget());
         navigate(redirectTarget);
       } else {
-        navigate("/logInSuccsess");
+        navigate("/Home");
       }
     } catch (err) {
       console.error("Login error:", err);

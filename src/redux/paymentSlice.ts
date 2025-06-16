@@ -5,9 +5,10 @@ export const processPayment = createAsyncThunk(
   'payment/process',
   async (orderData: any, { rejectWithValue }) => {
     try {
+      console.log("📦 orderData:", orderData);
       const token = localStorage.getItem('token');
-      const response = await fetch("https://localhost:7172/api/Client/Payment", {
-        method: "PUT",
+      const response = await fetch("https://localhost:7172/api/Order/Payment", {
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
           "Authorization": `Bearer ${token}`
