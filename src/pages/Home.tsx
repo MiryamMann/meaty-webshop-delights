@@ -23,7 +23,7 @@ const Home = () => {
             style={{ letterSpacing: ".17em" }}
           >
             {lang === "he"
-              ? <>אמנות <span className="text-burgundy">הבשר</span></>
+              ? <>אומנות <span className="text-burgundy">הבשר</span></>
               : <>The Fine Art of <span className="text-burgundy">Meat</span></>
             }
           </h1>
@@ -32,7 +32,7 @@ const Home = () => {
             style={{ letterSpacing: ".04em" }}
           >
             {lang === "he"
-              ? "בשבילכם... בשרים איכותיים להזמנה הביתה – לבשל כפי שף במטבח הפרטי שלכם" 
+              ? "בשלו כמו שפים במטבח שלכם, עם בשרי הקר במשלוח עד הבית" 
               : "Cook chef-style meat at home with premium raw cuts delivered to your door"}
           </p>
           <div className="flex flex-wrap gap-6 justify-center mt-8">

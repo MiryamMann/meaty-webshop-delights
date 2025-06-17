@@ -20,7 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'playfair': ['Playfair Display', 'serif'],
+				'playfair': ['Playfair Display', 'Assistant Light'],
 			},
 			colors: {
 				burgundy: {
