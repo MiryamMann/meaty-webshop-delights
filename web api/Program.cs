@@ -47,8 +47,10 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 builder.Services.AddDbContext<dbClass>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// Controllers
 builder.Services.AddControllers();
 
+// Swagger + הגדרות טוקן
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -114,6 +116,7 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 app.UseCors(MyAllowSpecificOrigins);
 
+// Swagger
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

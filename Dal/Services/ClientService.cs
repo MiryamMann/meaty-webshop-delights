@@ -84,6 +84,14 @@ namespace Dal.Services
             return _context.Clients.FirstOrDefault(c => c.Email == email);
         }
 
+<<<<<<< HEAD
+=======
+        public async Task UpdateAsync(Client client)
+        {
+            _context.Clients.Update(client);
+            await _context.SaveChangesAsync();
+        }
+>>>>>>> origin/Server
 
         public async Task<bool> IsEmailExistsAsync(string email)
         {

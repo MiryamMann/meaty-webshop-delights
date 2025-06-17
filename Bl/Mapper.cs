@@ -78,16 +78,28 @@ namespace Bl
         }
 
        
+<<<<<<< HEAD
         public static BlOrder MapDtoToBlOrder(AddOrderRequestDto dto, long addressId)
         {
             return new BlOrder
             {
                 //ClientId = dto.ClientId,
+=======
+        public static BlOrder MapDtoToBlOrder(OrderDto dto, long addressId)
+        {
+            return new BlOrder
+            {
+                ClientId = dto.ClientId,
+>>>>>>> origin/Server
                 OrderDate = dto.OrderDate,
                 TotalPrice = dto.TotalPrice,
                 StatusId = dto.StatusId,
                 AddressId = addressId,
+<<<<<<< HEAD
                 //OrderItems = dto.OrderItems 
+=======
+                OrderItems = dto.OrderItems 
+>>>>>>> origin/Server
             };
         }
 
@@ -127,6 +139,7 @@ namespace Bl
             return dalProducts?.ConvertAll(ToBlProduct);
         }
 
+<<<<<<< HEAD
         //public static Order ToDalOrder(BlOrder blOrder)
         //{
         //    if (blOrder == null) return null;
@@ -146,6 +159,27 @@ namespace Bl
         //    }
         //    return dalOrder;
         //}
+=======
+        public static Order ToDalOrder(BlOrder blOrder)
+        {
+            if (blOrder == null) return null;
+            var dalOrder= new Order
+            {
+                Id = blOrder.Id,
+                ClientId = blOrder.ClientId,
+                OrderDate = blOrder.OrderDate,
+                AddressId = blOrder.AddressId,
+                TotalPrice = blOrder.TotalPrice,
+                StatusId = blOrder.StatusId,
+                OrderItems = new List<OrderItem>()
+            };
+            foreach (var item in blOrder.OrderItems)
+            {
+               Mapper.ToDalOrder(blOrder).OrderItems.Add(Mapper.ToDalOrderItem(item)); // הנח שיש מתודה הממירה פריט להזמנה
+            }
+            return dalOrder;
+        }
+>>>>>>> origin/Server
 
         public static Product ToDalProduct(BlProduct blProduct)
         {
@@ -241,14 +275,24 @@ namespace Bl
                 ProductId = blOrderItem.ProductId
             };
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> origin/Server
         public static Client ToDalClient(BlClient blClient)
         {
             if (blClient == null)
                 return null;
 
+<<<<<<< HEAD
             var client = new Client
             {
+=======
+            return new Client
+            {
+                Id = blClient.Id,
+>>>>>>> origin/Server
                 Email = blClient.Email,
                 FirstName = blClient.FirstName,
                 LastName = blClient.LastName,
@@ -258,6 +302,7 @@ namespace Bl
                 RefreshToken = blClient.RefreshToken,
                 RefreshTokenExpiry = blClient.RefreshTokenExpiry
             };
+<<<<<<< HEAD
 
             // רק אם זה אובייקט קיים (Id > 0), נציב את ה־Id
             if (blClient.Id > 0)
@@ -267,6 +312,10 @@ namespace Bl
         }
 
 
+=======
+        }
+
+>>>>>>> origin/Server
 
     }
 

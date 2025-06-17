@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 using Dal.models;
+=======
+﻿using Dal.models;
+>>>>>>> origin/Server
 using System;
 using System.Collections.Generic;
 
@@ -21,10 +25,37 @@ public partial class BlClient
     public DateTime? RefreshTokenExpiry { get; set; }
     public string? GoogleId { get; set; }
     public string PhoneNumber { get; set; } = null!;
+<<<<<<< HEAD
     public DateTime? RefreshTokenExpiration { get; set; }
 
     //public static implicit operator BlClient(Client v)
     //{
     //    throw new NotImplementedException();
     //}
+=======
+
+    public static implicit operator BlClient(Client v)
+    {
+        throw new NotImplementedException();
+    }
+>>>>>>> origin/Server
 }
+//מירי-------
+//נראה לי שצריך לשנות את זה לזה 
+//public static implicit operator BlClient(Client v)
+//    {
+//        return new BlClient
+//        {
+//            Id = v.Id,
+//            FirstName = v.FirstName,
+//            LastName = v.LastName,
+//            AddressId = v.AddressId,
+//            Email = v.Email,
+//            Password = v.Password,
+//            RefreshToken = v.RefreshToken,
+//            RefreshTokenExpiry = v.RefreshTokenExpiry,
+//            GoogleId = v.GoogleId,
+//            PhoneNumber = v.PhoneNumber
+//            // הוסף כאן כל שדה נוסף שצריך
+//        };
+//    }
