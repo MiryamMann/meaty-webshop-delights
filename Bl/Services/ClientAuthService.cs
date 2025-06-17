@@ -51,7 +51,7 @@ namespace Bl.Services
             }
         }
 
-        public async Task<BlClient?> SignUpAsync(ClientSignUpDto dto)
+        public async Task<BlClient?> SignUpAsync(ClientDto dto)
         {
             if (await _authDal.ExistsByEmailAsync(dto.Email))
                 throw new Exception();

@@ -5,7 +5,7 @@ using Bl.Moduls;
 public interface IClientAuthService
 {
     Task<BlClient?> LoginAsync(ClientLoginDto dto);
-    Task<BlClient?> SignUpAsync(ClientSignUpDto dto);
+    Task<BlClient?> SignUpAsync(ClientDto dto);
     Task<bool> ExistsByEmailAsync(string email);
     Task<LoginResponseDto?> LoginWithGoogleTokenAsync(string idToken);
     Task<BlClient?> GetByRefreshTokenAsync(string refreshToken);

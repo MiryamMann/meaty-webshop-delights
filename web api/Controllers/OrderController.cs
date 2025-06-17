@@ -36,6 +36,7 @@ public class OrderController : ControllerBase
     [Authorize]
     public async Task<IActionResult> Payment([FromBody] AddOrderRequestDto order)
     {
+        Console.WriteLine("Payment");
         if (!User.Identity.IsAuthenticated)
             return Unauthorized("The token is not recognised successfully.");
 

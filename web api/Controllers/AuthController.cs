@@ -67,7 +67,7 @@ namespace web_api.Controllers
         }
 
         [HttpPost("SignUp")]
-        public async Task<IActionResult> SignUp([FromBody] ClientSignUpDto dto)
+        public async Task<IActionResult> SignUp([FromBody] ClientDto dto)
         {
             Console.WriteLine("🆕 Signup endpoint called");
 
@@ -112,7 +112,6 @@ namespace web_api.Controllers
                     Console.WriteLine("❌ Google token validation failed.");
                     return Unauthorized(new { message = "הטוקן של Google לא תקין." });
                 }
-
                 Console.WriteLine("✅ Google login successful.");
                 return Ok(result);
             }

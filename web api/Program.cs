@@ -10,10 +10,10 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 using Dal.API;
+using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// הרשמות לשירותים
 builder.Services.AddScoped<IClientDal, DalClientService>();
 builder.Services.AddScoped<IClientAuthDal, DalClientService>();
 builder.Services.AddScoped<IProductDal, DalProductService>();
@@ -26,14 +26,29 @@ builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IOrderDal, Dal.Services.OrderService>();
 builder.Services.AddScoped<IOrderService, Bl.Services.OrderService>();
 builder.Services.AddScoped<IOrderManagmentService, OrderManagmentService>();
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.InvalidModelStateResponseFactory = context =>
+    {
+        var errors = context.ModelState
+            .Where(e => e.Value?.Errors.Count > 0)
+            .Select(e => new { Field = e.Key, Errors = e.Value?.Errors.Select(x => x.ErrorMessage) });
+
+        var responseObj = new
+        {
+            Message = "Invalid input",
+            Errors = errors
+        };
+
+        return new BadRequestObjectResult(responseObj);
+    };
+});
 
 builder.Services.AddDbContext<dbClass>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Controllers
 builder.Services.AddControllers();
 
-// Swagger + הגדרות טוקן
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -84,14 +99,13 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-// CORS
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
         policy =>
         {
-            policy.WithOrigins("http://localhost:5174")
+            policy.WithOrigins("http://localhost:8080")
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });
@@ -100,7 +114,6 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 app.UseCors(MyAllowSpecificOrigins);
 
-// Swagger
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

@@ -78,16 +78,16 @@ namespace Bl
         }
 
        
-        public static BlOrder MapDtoToBlOrder(OrderDto dto, long addressId)
+        public static BlOrder MapDtoToBlOrder(AddOrderRequestDto dto, long addressId)
         {
             return new BlOrder
             {
-                ClientId = dto.ClientId,
+                //ClientId = dto.ClientId,
                 OrderDate = dto.OrderDate,
                 TotalPrice = dto.TotalPrice,
                 StatusId = dto.StatusId,
                 AddressId = addressId,
-                OrderItems = dto.OrderItems 
+                //OrderItems = dto.OrderItems 
             };
         }
 
@@ -158,9 +158,9 @@ namespace Bl
                 PricePerKilo = blProduct.PricePerKilo,
             };
         }
-        public static ClientSignUpDto ToClientSignUpDto(BlClient client)
+        public static ClientDto ToClientSignUpDto(BlClient client)
         {
-            return new ClientSignUpDto
+            return new ClientDto
             {
               
                 FirstName = client.FirstName,
@@ -170,7 +170,7 @@ namespace Bl
             };
         }
 
-        public static Client ToDalClient(ClientSignUpDto blClient, int addressId)
+        public static Client ToDalClient(ClientDto blClient, int addressId)
         {
             if (blClient == null) return null;
 
