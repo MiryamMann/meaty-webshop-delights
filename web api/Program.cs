@@ -107,11 +107,12 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
         policy =>
         {
-            policy.WithOrigins("http://localhost:8080")
+            policy.WithOrigins("http://localhost:5174") // 🔥 שינוי כאן!
                   .AllowAnyHeader()
-                  .AllowAnyMethod();
+                  .AllowAnyMethod()
+                  .AllowCredentials(); // 🔥 הוסף גם את זה
         });
-});
+}); ;
 
 var app = builder.Build();
 app.UseCors(MyAllowSpecificOrigins);

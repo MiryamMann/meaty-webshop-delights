@@ -21,24 +21,24 @@ namespace Bl.Services
 
         public async Task<bool> CreateOrderAsync(AddOrderRequestDto DTOorder)
         {
-<<<<<<< HEAD
-            Console.WriteLine("CreateOrderAsync");
-=======
->>>>>>> origin/Server
+            if (DTOorder == null || DTOorder.Client == null)
+                throw new ArgumentNullException(nameof(DTOorder), "Order or client is null");
+
             var client = _Clientdal.GetClientByEmail(DTOorder.Client.Email);
-            if (client == null || client.AddressId == null)
+            if (client == null || client.AddressId == 0)
                 throw new Exception("Client or address not found");
 
-<<<<<<< HEAD
             var order = Mapper.MapDtoToBlOrder(DTOorder, client.AddressId);
-=======
-            var order = Mapper.MapDtoToBlOrder(DTOorder.Order, client.AddressId);
->>>>>>> origin/Server
 
-            if (!CreateNewOrder(order)) return false;
+            if (order.OrderItems == null || order.OrderItems.Count == 0)
+                return false;
+
+            if (!CreateNewOrder(order))
+                return false;
 
             foreach (var item in order.OrderItems)
-                if (!AddProduct(item)) return false;
+                if (!AddProduct(item))
+                    return false;
 
             return true;
         }
@@ -88,10 +88,9 @@ namespace Bl.Services
         }
         public async Task<bool> Payment(AddOrderRequestDto order)
         {
-<<<<<<< HEAD
+
             Console.WriteLine("Payment");
-=======
->>>>>>> origin/Server
+
             if (await CreateOrderAsync(order))
             {
                 return true;

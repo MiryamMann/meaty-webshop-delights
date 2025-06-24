@@ -15,17 +15,14 @@ namespace Bl.Services
         private readonly IClientDal _dal;
         private readonly IClientAuthDal _authDal;
         private readonly IJwtService _jwt;
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/Server
         public ClientAuthService(IClientDal dal, IJwtService jwt, IClientAuthDal authDal)
         {
             _dal = dal;
             _jwt = jwt;
             _authDal = authDal;
         }
-<<<<<<< HEAD
+
         public async Task<BlClient?> GetByRefreshTokenAsync(string refreshToken)
         {
             var client = await _authDal.GetByRefreshTokenAsync(refreshToken);
@@ -34,6 +31,7 @@ namespace Bl.Services
 
             return Mapper.ToBlClient(client);
         }
+
         public async Task UpdateAsync(BlClient client)
         {
             try
@@ -52,18 +50,14 @@ namespace Bl.Services
                     Console.WriteLine(ex.InnerException.Message);
                 }
 
-                throw; // תזרקי שוב אם את רוצה לראות אותה גם בקונסולה הראשית
+                throw;
             }
         }
 
         public async Task<BlClient?> SignUpAsync(ClientDto dto)
-=======
-
-        public async Task<BlClient?> SignUpAsync(ClientSignUpDto dto)
->>>>>>> origin/Server
         {
             if (await _authDal.ExistsByEmailAsync(dto.Email))
-                throw new Exception();
+                throw new Exception("Email already exists.");
 
             var address = new Address
             {
@@ -80,12 +74,8 @@ namespace Bl.Services
             var client = Mapper.ToDalClient(dto, (int)address.Id);
             client.Password = new PasswordHasher<Client>().HashPassword(client, dto.Password);
 
-<<<<<<< HEAD
             var savedClient = await _authDal.SignUpAsync(client);
             return Mapper.ToBlClient(savedClient);
-=======
-            return await _authDal.SignUpAsync(client);
->>>>>>> origin/Server
         }
 
         public async Task<BlClient?> LoginAsync(ClientLoginDto dto)
@@ -115,6 +105,7 @@ namespace Bl.Services
 
             return Mapper.ToBlClient(client);
         }
+
         public async Task<bool> ExistsByEmailAsync(string email)
         {
             return await _authDal.ExistsByEmailAsync(email);
@@ -124,88 +115,44 @@ namespace Bl.Services
         {
             var payload = await GoogleJsonWebSignature.ValidateAsync(idToken);
 
-<<<<<<< HEAD
-            // בדיקה אם קיים לקוח במסד לפי האימייל
-=======
->>>>>>> origin/Server
             var dalClient = _dal.GetClientByEmail(payload.Email);
 
             if (dalClient == null)
             {
-<<<<<<< HEAD
-                // לקוח חדש
-=======
-                // יצירת משתמש חדש עם מזהה גוגל
->>>>>>> origin/Server
+                // משתמש חדש
                 dalClient = new Client
                 {
                     Email = payload.Email,
                     FirstName = payload.Name,
-<<<<<<< HEAD
                     GoogleId = payload.Subject,
                     RefreshToken = _jwt.GenerateRefreshToken(),
                     RefreshTokenExpiry = DateTime.UtcNow.AddDays(7)
                 };
 
-                // הוספה למסד
                 await _authDal.SignUpAsync(dalClient);
             }
             else
             {
-                // לקוח קיים – נעדכן את GoogleId אם חסר
+                // משתמש קיים – נעדכן GoogleId וטוקנים
                 if (string.IsNullOrEmpty(dalClient.GoogleId))
                 {
                     dalClient.GoogleId = payload.Subject;
                 }
 
-                // תמיד נעדכן טוקנים
                 dalClient.RefreshToken = _jwt.GenerateRefreshToken();
                 dalClient.RefreshTokenExpiry = DateTime.UtcNow.AddDays(7);
 
                 await _authDal.UpdateAsync(dalClient);
             }
 
-            // יצירת BlClient והחזרת טוקנים
             var blClient = Mapper.ToBlClient(dalClient);
             var accessToken = _jwt.GenerateToken(blClient);
-=======
-                    GoogleId = payload.Subject
-                };
-
-                // הוספה למסד הנתונים
-                await _authDal.SignUpAsync(dalClient);
-            }
-            else if (dalClient.GoogleId == null)
-            {
-                // משתמש קיים אבל אין לו GoogleId – נעדכן אותו
-                dalClient.GoogleId = payload.Subject;
-                await _authDal.UpdateAsync(dalClient);
-            }
-            Console.WriteLine($"Saving client: Email={dalClient.Email}, GoogleId={dalClient.GoogleId}");
-
-            // יצירת טוקנים
-            var blClient = Mapper.ToBlClient(dalClient);
-            var accessToken = _jwt.GenerateToken(blClient);
-            var refreshToken = _jwt.GenerateRefreshToken();
-
-            // עדכון טוקן במסד
-            dalClient.RefreshToken = refreshToken;
-            dalClient.RefreshTokenExpiry = DateTime.UtcNow.AddDays(7);
-            await _authDal.UpdateAsync(dalClient);
->>>>>>> origin/Server
 
             return new LoginResponseDto
             {
                 AccessToken = accessToken,
-<<<<<<< HEAD
                 RefreshToken = dalClient.RefreshToken
             };
         }
-
-=======
-                RefreshToken = refreshToken
-            };
-        }
->>>>>>> origin/Server
     }
 }

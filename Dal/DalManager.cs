@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-﻿using Dal.API;
-=======
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Bl.Services;
 using Dal.API;
->>>>>>> origin/Server
 using Dal.Models;
 using Dal.models;
 using Dal.Services;

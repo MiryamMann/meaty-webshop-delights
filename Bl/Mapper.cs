@@ -17,7 +17,8 @@ namespace Bl
         public static BlOrder ToBlOrder(Order dalOrder)
         {
             if (dalOrder == null) return null;
-           var blOrder= new BlOrder
+
+            var blOrder = new BlOrder
             {
                 Id = dalOrder.Id,
                 ClientId = dalOrder.ClientId,
@@ -25,22 +26,25 @@ namespace Bl
                 AddressId = dalOrder.AddressId,
                 TotalPrice = dalOrder.TotalPrice,
                 StatusId = dalOrder.StatusId,
-               OrderItems = new List<BlOrderItem>()
-           };
-            foreach (var item in dalOrder.OrderItems)
+                OrderItems = new List<BlOrderItem>()
+            };
+
+            if (dalOrder.OrderItems != null)
             {
-                blOrder.OrderItems.Add(Mapper.ToBlOrderItem(item)); 
+                foreach (var item in dalOrder.OrderItems)
+                {
+                    blOrder.OrderItems.Add(ToBlOrderItem(item));
+                }
             }
 
             return blOrder;
-                //OrderItems = dalOrder.OrderItems.Select(ToBlOrderItem).ToList() // Ensure to map OrderItems
-            }
-        
+        }
 
         public static Order ToDalOrder(BlOrder blOrder)
         {
             if (blOrder == null) return null;
-            return new Order
+
+            var dalOrder = new Order
             {
                 Id = blOrder.Id,
                 ClientId = blOrder.ClientId,
@@ -48,8 +52,18 @@ namespace Bl
                 AddressId = blOrder.AddressId,
                 TotalPrice = blOrder.TotalPrice,
                 StatusId = blOrder.StatusId,
-                //OrderItems = blOrder.OrderItems.Select(ToDalOrderItem).ToList() // Ensure to map OrderItems
+                OrderItems = new List<OrderItem>()
             };
+
+            if (blOrder.OrderItems != null)
+            {
+                foreach (var item in blOrder.OrderItems)
+                {
+                    dalOrder.OrderItems.Add(ToDalOrderItem(item));
+                }
+            }
+
+            return dalOrder;
         }
 
         public static BlAddress ToBlAddress(Address dalAddress)
@@ -77,32 +91,34 @@ namespace Bl
             };
         }
 
-       
-<<<<<<< HEAD
+
         public static BlOrder MapDtoToBlOrder(AddOrderRequestDto dto, long addressId)
         {
+            if (dto == null) return null;
+
             return new BlOrder
             {
-                //ClientId = dto.ClientId,
-=======
-        public static BlOrder MapDtoToBlOrder(OrderDto dto, long addressId)
-        {
-            return new BlOrder
-            {
-                ClientId = dto.ClientId,
->>>>>>> origin/Server
+                ClientId = dto.ExistingClientId ?? string.Empty, // אם לא קיים, שים מחרוזת ריקה או תטפל אחרת
                 OrderDate = dto.OrderDate,
                 TotalPrice = dto.TotalPrice,
                 StatusId = dto.StatusId,
                 AddressId = addressId,
-<<<<<<< HEAD
-                //OrderItems = dto.OrderItems 
-=======
-                OrderItems = dto.OrderItems 
->>>>>>> origin/Server
+                OrderItems = dto.OrderItems != null
+                    ? dto.OrderItems.ConvertAll(ToBlOrderItemFromDto)
+                    : new List<BlOrderItem>()
             };
         }
+        public static BlOrderItem ToBlOrderItemFromDto(OrderItemDto dto)
+        {
+            if (dto == null) return null;
 
+            return new BlOrderItem
+            {
+                ProductId = int.TryParse(dto.ProductId, out var pid) ? pid : 0,
+                Amount = dto.Quantity
+                // שדות נוספים (OrderItemId, OrderId, PriceOfItem) יישארו ברירת מחדל (0) כי לא קיימים ב-DTO
+            };
+        }
 
         public static BlOrderItem ToBlOrderItem(OrderItem dalOrderItem)
         {
@@ -139,47 +155,9 @@ namespace Bl
             return dalProducts?.ConvertAll(ToBlProduct);
         }
 
-<<<<<<< HEAD
-        //public static Order ToDalOrder(BlOrder blOrder)
-        //{
-        //    if (blOrder == null) return null;
-        //    var dalOrder= new Order
-        //    {
-        //        Id = blOrder.Id,
-        //        ClientId = blOrder.ClientId,
-        //        OrderDate = blOrder.OrderDate,
-        //        AddressId = blOrder.AddressId,
-        //        TotalPrice = blOrder.TotalPrice,
-        //        StatusId = blOrder.StatusId,
-        //        OrderItems = new List<OrderItem>()
-        //    };
-        //    foreach (var item in blOrder.OrderItems)
-        //    {
-        //       Mapper.ToDalOrder(blOrder).OrderItems.Add(Mapper.ToDalOrderItem(item)); // הנח שיש מתודה הממירה פריט להזמנה
-        //    }
-        //    return dalOrder;
-        //}
-=======
-        public static Order ToDalOrder(BlOrder blOrder)
-        {
-            if (blOrder == null) return null;
-            var dalOrder= new Order
-            {
-                Id = blOrder.Id,
-                ClientId = blOrder.ClientId,
-                OrderDate = blOrder.OrderDate,
-                AddressId = blOrder.AddressId,
-                TotalPrice = blOrder.TotalPrice,
-                StatusId = blOrder.StatusId,
-                OrderItems = new List<OrderItem>()
-            };
-            foreach (var item in blOrder.OrderItems)
-            {
-               Mapper.ToDalOrder(blOrder).OrderItems.Add(Mapper.ToDalOrderItem(item)); // הנח שיש מתודה הממירה פריט להזמנה
-            }
-            return dalOrder;
-        }
->>>>>>> origin/Server
+
+       
+
 
         public static Product ToDalProduct(BlProduct blProduct)
         {
@@ -275,47 +253,26 @@ namespace Bl
                 ProductId = blOrderItem.ProductId
             };
         }
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> origin/Server
         public static Client ToDalClient(BlClient blClient)
         {
             if (blClient == null)
                 return null;
 
-<<<<<<< HEAD
-            var client = new Client
-            {
-=======
             return new Client
             {
                 Id = blClient.Id,
->>>>>>> origin/Server
-                Email = blClient.Email,
                 FirstName = blClient.FirstName,
                 LastName = blClient.LastName,
                 AddressId = blClient.AddressId,
-                GoogleId = blClient.GoogleId,
+                Email = blClient.Email,
                 Password = blClient.Password,
                 RefreshToken = blClient.RefreshToken,
-                RefreshTokenExpiry = blClient.RefreshTokenExpiry
+                RefreshTokenExpiry = blClient.RefreshTokenExpiry,
+                GoogleId = blClient.GoogleId,
+                PhoneNumber = blClient.PhoneNumber
             };
-<<<<<<< HEAD
-
-            // רק אם זה אובייקט קיים (Id > 0), נציב את ה־Id
-            if (blClient.Id > 0)
-                client.Id = blClient.Id;
-
-            return client;
         }
-
-
-=======
-        }
-
->>>>>>> origin/Server
 
     }
 
